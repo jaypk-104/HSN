@@ -1,0 +1,41 @@
+{
+    "name": "COVID_SELF_CHECK",
+    "settings": {
+        "cmd": {
+            "license": "commercial"
+        },
+        "urlPrefix": "http://localhost:1841/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "exportPath": ""
+    },
+    "xdsVersion": "3.5.1",
+    "xdsBuild": 348,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "touch24",
+    "viewOrderMap": {
+        "view": [
+            "f3d8bf3e-6f47-4c7d-8d60-dd3ebe87c18b"
+        ],
+        "store": [],
+        "controller": [
+            "2d7c28e4-7bbd-41a0-8b14-37a29c56a4ad"
+        ],
+        "model": [],
+        "resource": [
+            "4d931dd5-0db9-4613-ad1e-d474aeff6027",
+            "b7887037-2f39-457e-a52f-b30cdfc42d42"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

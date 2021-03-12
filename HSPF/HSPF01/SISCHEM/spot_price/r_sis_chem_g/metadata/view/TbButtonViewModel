@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "toolbar_btn",
+        "designer|userClassName": "TbButtonViewModel"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "MyToolbar1ViewModel",
+    "designerId": "f86ed0f4-f560-4127-95f5-d9ccbe196204"
+}

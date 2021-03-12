@@ -1,0 +1,285 @@
+14-Dec-2020 13:51:41.351 심각 [http-nio-80-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 18 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+15: 	request.setCharacterEncoding("utf-8");
+16: 	ResultSet rs = null;
+17: 	CallableStatement cs = null;
+18: 	JSONObject jsonObject = new JSONObject();
+19: 	JSONArray jsonArray = new JSONArray();
+20: 	JSONObject subObject = null;
+21: 
+
+
+An error occurred at line: 18 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+15: 	request.setCharacterEncoding("utf-8");
+16: 	ResultSet rs = null;
+17: 	CallableStatement cs = null;
+18: 	JSONObject jsonObject = new JSONObject();
+19: 	JSONArray jsonArray = new JSONArray();
+20: 	JSONObject subObject = null;
+21: 
+
+
+An error occurred at line: 20 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+17: 	CallableStatement cs = null;
+18: 	JSONObject jsonObject = new JSONObject();
+19: 	JSONArray jsonArray = new JSONArray();
+20: 	JSONObject subObject = null;
+21: 
+22: 	try {
+23: 		String V_TYPE = request.getParameter("V_TYPE") == null ? "" : request.getParameter("V_TYPE");
+
+
+An error occurred at line: 65 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+62: 
+63: 			rs = (ResultSet) cs.getObject(22);
+64: 			while (rs.next()) {
+65: 				subObject = new JSONObject();
+66: 				subObject.put("PO_NO", rs.getString("PO_NO"));
+67: 				subObject.put("PO_SEQ", rs.getString("PO_SEQ"));
+68: 				subObject.put("ITEM_CD", rs.getString("ITEM_CD"));
+
+
+An error occurred at line: 143 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+140: 
+141: 			rs = (ResultSet) cs.getObject(22);
+142: 			while (rs.next()) {
+143: 				subObject = new JSONObject();
+144: 				subObject.put("PO_PRC", rs.getString("PO_PRC"));
+145: 				subObject.put("UNIT", rs.getString("UNIT"));
+146: 				jsonArray.add(subObject);
+
+
+An error occurred at line: 248 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+245: // 					JSONObject jsondata = JSONObject.fromObject(jsonData);
+246: 					JSONParser parser = new JSONParser();
+247: 					Object obj = parser.parse(jsonData);					
+248: 					JSONObject jsondata = (JSONObject) obj;
+249: 					
+250: 					V_TYPE = jsondata.get("V_TYPE") == null ? "" : jsondata.get("V_TYPE").toString();
+251: 					V_PO_NO = jsondata.get("PO_NO") == null ? "" : jsondata.get("PO_NO").toString();
+
+
+An error occurred at line: 248 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+245: // 					JSONObject jsondata = JSONObject.fromObject(jsonData);
+246: 					JSONParser parser = new JSONParser();
+247: 					Object obj = parser.parse(jsonData);					
+248: 					JSONObject jsondata = (JSONObject) obj;
+249: 					
+250: 					V_TYPE = jsondata.get("V_TYPE") == null ? "" : jsondata.get("V_TYPE").toString();
+251: 					V_PO_NO = jsondata.get("PO_NO") == null ? "" : jsondata.get("PO_NO").toString();
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 18 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+15: 	request.setCharacterEncoding("utf-8");
+16: 	ResultSet rs = null;
+17: 	CallableStatement cs = null;
+18: 	JSONObject jsonObject = new JSONObject();
+19: 	JSONArray jsonArray = new JSONArray();
+20: 	JSONObject subObject = null;
+21: 
+
+
+An error occurred at line: 18 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+15: 	request.setCharacterEncoding("utf-8");
+16: 	ResultSet rs = null;
+17: 	CallableStatement cs = null;
+18: 	JSONObject jsonObject = new JSONObject();
+19: 	JSONArray jsonArray = new JSONArray();
+20: 	JSONObject subObject = null;
+21: 
+
+
+An error occurred at line: 20 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+17: 	CallableStatement cs = null;
+18: 	JSONObject jsonObject = new JSONObject();
+19: 	JSONArray jsonArray = new JSONArray();
+20: 	JSONObject subObject = null;
+21: 
+22: 	try {
+23: 		String V_TYPE = request.getParameter("V_TYPE") == null ? "" : request.getParameter("V_TYPE");
+
+
+An error occurred at line: 65 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+62: 
+63: 			rs = (ResultSet) cs.getObject(22);
+64: 			while (rs.next()) {
+65: 				subObject = new JSONObject();
+66: 				subObject.put("PO_NO", rs.getString("PO_NO"));
+67: 				subObject.put("PO_SEQ", rs.getString("PO_SEQ"));
+68: 				subObject.put("ITEM_CD", rs.getString("ITEM_CD"));
+
+
+An error occurred at line: 143 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+140: 
+141: 			rs = (ResultSet) cs.getObject(22);
+142: 			while (rs.next()) {
+143: 				subObject = new JSONObject();
+144: 				subObject.put("PO_PRC", rs.getString("PO_PRC"));
+145: 				subObject.put("UNIT", rs.getString("UNIT"));
+146: 				jsonArray.add(subObject);
+
+
+An error occurred at line: 248 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+245: // 					JSONObject jsondata = JSONObject.fromObject(jsonData);
+246: 					JSONParser parser = new JSONParser();
+247: 					Object obj = parser.parse(jsonData);					
+248: 					JSONObject jsondata = (JSONObject) obj;
+249: 					
+250: 					V_TYPE = jsondata.get("V_TYPE") == null ? "" : jsondata.get("V_TYPE").toString();
+251: 					V_PO_NO = jsondata.get("PO_NO") == null ? "" : jsondata.get("PO_NO").toString();
+
+
+An error occurred at line: 248 in the jsp file: /HSPF01/HSPF03/mm3/po/m_po_steel/sql/M_PO_HSPF_STEEL_D.jsp
+JSONObject cannot be resolved to a type
+245: // 					JSONObject jsondata = JSONObject.fromObject(jsonData);
+246: 					JSONParser parser = new JSONParser();
+247: 					Object obj = parser.parse(jsonData);					
+248: 					JSONObject jsondata = (JSONObject) obj;
+249: 					
+250: 					V_TYPE = jsondata.get("V_TYPE") == null ? "" : jsondata.get("V_TYPE").toString();
+251: 					V_PO_NO = jsondata.get("PO_NO") == null ? "" : jsondata.get("PO_NO").toString();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+14-Dec-2020 15:36:27.059 심각 [http-nio-80-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [javax.servlet.ServletException: java.sql.SQLException: JDBC-90603:Invalid operation: disconnected from the server.] with root cause
+ java.sql.SQLException: JDBC-90603:Invalid operation: disconnected from the server.
+	at com.tmax.tibero.jdbc.err.TbError.makeSQLException(Unknown Source)
+	at com.tmax.tibero.jdbc.err.TbError.newSQLException(Unknown Source)
+	at com.tmax.tibero.jdbc.err.TbError.newSQLException(Unknown Source)
+	at com.tmax.tibero.jdbc.driver.TbConnection.createStatement(Unknown Source)
+	at com.tmax.tibero.jdbc.driver.TbConnection.createStatement(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor50.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.jdbc.pool.ProxyConnection.invoke(ProxyConnection.java:126)
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:108)
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:75)
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:108)
+	at org.apache.tomcat.jdbc.pool.DisposableConnectionFacade.invoke(DisposableConnectionFacade.java:81)
+	at com.sun.proxy.$Proxy9.createStatement(Unknown Source)
+	at org.apache.jsp.HSPF01.TOT.im.m_005fimp_005ftot_005fhspf.sql.M_005fIMP_005fTOT_005fHSPF_jsp._jspService(M_005fIMP_005fTOT_005fHSPF_jsp.java:318)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+14-Dec-2020 18:27:59.801 심각 [http-nio-80-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [javax.servlet.ServletException: java.security.InvalidKeyException: No installed provider supports this key: (null)] with root cause
+ java.security.InvalidKeyException: No installed provider supports this key: (null)
+	at javax.crypto.Cipher.chooseProvider(Cipher.java:893)
+	at javax.crypto.Cipher.init(Cipher.java:1249)
+	at javax.crypto.Cipher.init(Cipher.java:1186)
+	at org.apache.jsp.HSPF01.common.login.sql.loginproc_jsp.decryptRsa(loginproc_jsp.java:46)
+	at org.apache.jsp.HSPF01.common.login.sql.loginproc_jsp._jspService(loginproc_jsp.java:245)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+

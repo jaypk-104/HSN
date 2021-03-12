@@ -1,0 +1,53 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "MyGridController",
+            "TbButtonController"
+        ],
+        "models": [
+            "MyModel"
+        ],
+        "name": "R_STEEL_SCRAP",
+        "stores": [
+            "MyStore",
+            "E01_Grid_Store",
+            "E01_Chart_Store",
+            "E06_Grid_Store",
+            "E06_Chart_Store",
+            "E07_Grid_Store",
+            "E07_Chart_Store",
+            "E02_Chart_Store",
+            "E03_Chart_Store",
+            "E05_Chart_Store",
+            "E04_Chart_Store",
+            "E08_Chart_Store",
+            "E09_Chart_Store",
+            "E02_Grid_Store",
+            "E03_Grid_Store",
+            "E04_Grid_Store",
+            "E05_Grid_Store",
+            "E08_Grid_Store",
+            "E09_Grid_Store"
+        ],
+        "views": [
+            "MySearchForm",
+            "MyViewport",
+            "TbButton"
+        ]
+    },
+    "configAlternates": {
+        "controllers": "typedarray",
+        "name": "string",
+        "views": "typedarray",
+        "models": "typedarray",
+        "stores": "typedarray"
+    },
+    "name": "Application",
+    "designerId": "application"
+}

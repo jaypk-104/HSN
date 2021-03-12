@@ -1,0 +1,130 @@
+{
+    "type": "Ext.chart.CartesianChart",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "colors": [
+            "[\"#115fa6\", \"#94ae0a\", \"#a61120\", \"#ff8809\", \"#ffd13e\", \"#a61187\", \"#24ad9a\", \"#7c7474\", \"#a66111\"]"
+        ],
+        "designer|userAlias": "mylinechart",
+        "designer|userClassName": "MyLineChart",
+        "height": 250,
+        "width": 400
+    },
+    "configAlternates": {
+        "colors": "array",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "width": "auto"
+    },
+    "name": "MyLineChart",
+    "designerId": "a5e26885-bf86-42e9-a1ce-a7d977938536",
+    "isBuiltIn": true,
+    "iconCls": "icon-line-chart",
+    "autoName": "MyLineChart",
+    "viewControllerInstanceId": "6d65f6bc-3392-4b48-9e9b-7c11bfd9f8c1",
+    "viewModelInstanceId": "5fc99582-326f-4903-9004-182f1fabf1a6",
+    "cn": [
+        {
+            "type": "Ext.chart.axis.Category",
+            "reference": {
+                "name": "axes",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fields": [
+                    "x"
+                ],
+                "title": null
+            },
+            "configAlternates": {
+                "fields": "typedarray",
+                "title": "string"
+            },
+            "name": "MyCategoryAxis",
+            "designerId": "fdead9fa-f6ce-4d6d-b582-4744ef9882e4"
+        },
+        {
+            "type": "Ext.chart.axis.Numeric",
+            "reference": {
+                "name": "axes",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fields": [
+                    "y1",
+                    "y2"
+                ],
+                "grid": [
+                    "{",
+                    "    odd: {",
+                    "        fill: '#e8e8e8'",
+                    "    }",
+                    "}"
+                ],
+                "position": "left",
+                "title": null
+            },
+            "configAlternates": {
+                "fields": "typedarray",
+                "grid": "object",
+                "position": "string",
+                "title": "string"
+            },
+            "name": "MyNumericAxis",
+            "designerId": "e0026b6e-4c3c-4ad5-9dfb-024a7313f238"
+        },
+        {
+            "type": "Ext.chart.series.Line",
+            "reference": {
+                "name": "series",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "xField": "x"
+            },
+            "configAlternates": {
+                "xField": "datafield"
+            },
+            "name": "MyLineSeries",
+            "designerId": "7574b2d2-0ac0-47bb-8759-716c77f6ac7b"
+        },
+        {
+            "type": "Ext.chart.series.Line",
+            "reference": {
+                "name": "series",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "colors": [
+                    "[\"#115fa6\", \"#94ae0a\", \"#a61120\", \"#ff8809\", \"#ffd13e\", \"#a61187\", \"#24ad9a\", \"#7c7474\", \"#a66111\"]"
+                ],
+                "xField": "x"
+            },
+            "configAlternates": {
+                "colors": "array",
+                "xField": "datafield"
+            },
+            "name": "MyLineSeries1",
+            "designerId": "2123ea58-f856-4f58-886a-5ab5743f28ed"
+        },
+        {
+            "type": "Ext.chart.interactions.PanZoom",
+            "reference": {
+                "name": "interactions",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyPanZoomInteraction",
+            "designerId": "1668979a-2b25-42d8-b49a-fc4909aeb99b"
+        }
+    ]
+}

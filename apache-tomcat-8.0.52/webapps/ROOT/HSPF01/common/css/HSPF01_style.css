@@ -1,0 +1,63 @@
+
+.grid-new-btn {
+	color: 495057;
+	font-size: 22px;
+	margin-left: -3px;
+}
+.grid-add-btn {
+	color: #2EA91B;
+	font-size: 22px;
+	margin-left: -3px;
+}
+.grid-del-btn {
+	color: #CD4444;
+	font-size: 22px;
+	margin-left: -3px;
+}
+.grid-normal-btn {
+	font-size: 24px;
+	margin-left: -3px;
+	color: #424242;
+}
+.grid-save-btn {
+	color: #0174DF;
+	font-size: 23px;
+	margin-left: -3px;
+}
+.grid-print-btn {
+	color: #FF8000;
+	font-size: 21px;
+	margin-left: -3px;
+}
+.grid-excel-btn {
+	color: #298A08;
+	font-size: 23px;
+	margin-left: -3px;
+}
+.grid-excel-btn {
+	color: #298A08;
+	font-size: 23px;
+	margin-left: -3px;
+}
+.grid-refresh-btn {
+	color: #ffe100;
+	font-size: 23px;
+	margin-left: -3px;
+}
+
+/*그리드 글자 색상*/
+.x-grid-item {
+	font-weight: 400;
+}
+
+.color-change .x-change-cell {
+    color:green;
+    font-weight: 500;
+}
+
+.blue-btn .x-btn-inner {
+    color: #3367d6 !important;
+    font-weight: 600;
+    font-size: 13px;
+}
+

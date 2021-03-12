@@ -1,0 +1,31 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController"
+    },
+    "name": "MyController",
+    "designerId": "2d7c28e4-7bbd-41a0-8b14-37a29c56a4ad",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#saveBtn",
+                "designer|targetType": "Ext.Button",
+                "fn": "click",
+                "name": "tap"
+            },
+            "name": "click",
+            "designerId": "719accf0-78de-4770-96ea-fac39b0fc6e3"
+        }
+    ]
+}

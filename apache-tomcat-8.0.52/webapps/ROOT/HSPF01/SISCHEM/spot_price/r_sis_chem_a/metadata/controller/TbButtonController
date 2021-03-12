@@ -1,0 +1,316 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TbButtonController",
+        "stores": [
+            "MyStore",
+            "A03_Grid_Store",
+            "A03_Chart_Store",
+            "A01_Grid_Store",
+            "A02_Grid_Store",
+            "A04_Grid_Store",
+            "A05_Grid_Store",
+            "A06_Grid_Store",
+            "A07_Grid_Store",
+            "A08_Grid_Store",
+            "A09_Grid_Store"
+        ]
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "stores": "typedarray"
+    },
+    "name": "MyController",
+    "designerId": "601d2cc5-6027-4092-9e74-d7ea8ef994a8",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#selBtn",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "selBtnClick",
+                "implHandler": [
+                    "var A01_Grid_Store = this.getStore('A01_Grid_Store');",
+                    "A01_Grid_Store.removeAll();",
+                    "A01_Grid_Store.load({",
+                    "    params: {",
+                    "        V_TYPE: 'A01_GRID',",
+                    "        V_FROM_DT: Ext.getCmp('V_FROM_DT').getValue(),",
+                    "        V_TO_DT: Ext.getCmp('V_TO_DT').getValue(),",
+                    "        V_COMP_ID : parent.Ext.getCmp('GCOMP_ID').getValue(),",
+                    "        V_USR_ID : parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "    },",
+                    "    callback: function(records,operations,success){",
+                    "    }",
+                    "});",
+                    "",
+                    "var A02_Grid_Store = this.getStore('A02_Grid_Store');",
+                    "A02_Grid_Store.removeAll();",
+                    "A02_Grid_Store.load({",
+                    "    params: {",
+                    "        V_TYPE: 'A02_GRID',",
+                    "        V_FROM_DT: Ext.getCmp('V_FROM_DT').getValue(),",
+                    "        V_TO_DT: Ext.getCmp('V_TO_DT').getValue(),",
+                    "        V_COMP_ID : parent.Ext.getCmp('GCOMP_ID').getValue(),",
+                    "        V_USR_ID : parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "    },",
+                    "    callback: function(records,operations,success){",
+                    "    }",
+                    "});",
+                    "",
+                    "var A03_Grid_Store = this.getStore('A03_Grid_Store');",
+                    "A03_Grid_Store.removeAll();",
+                    "A03_Grid_Store.load({",
+                    "    params: {",
+                    "        V_TYPE: 'A03_GRID',",
+                    "        V_FROM_DT: Ext.getCmp('V_FROM_DT').getValue(),",
+                    "        V_TO_DT: Ext.getCmp('V_TO_DT').getValue(),",
+                    "        V_COMP_ID : parent.Ext.getCmp('GCOMP_ID').getValue(),",
+                    "        V_USR_ID : parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "    },",
+                    "    callback: function(records,operations,success){",
+                    "    }",
+                    "});",
+                    "",
+                    "var A03_Chart_Store = this.getStore('A03_Chart_Store');",
+                    "A03_Chart_Store.removeAll();",
+                    "A03_Chart_Store.load({",
+                    "    params: {",
+                    "        V_TYPE: 'A03_CHART',",
+                    "        V_FROM_DT: Ext.getCmp('V_FROM_DT').getValue(),",
+                    "        V_TO_DT: Ext.getCmp('V_TO_DT').getValue(),",
+                    "        V_COMP_ID : parent.Ext.getCmp('GCOMP_ID').getValue(),",
+                    "        V_USR_ID : parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "    },",
+                    "    callback: function(records,operations,success){",
+                    "    }",
+                    "});",
+                    "",
+                    "var A04_Grid_Store = this.getStore('A04_Grid_Store');",
+                    "A04_Grid_Store.removeAll();",
+                    "A04_Grid_Store.load({",
+                    "    params: {",
+                    "        V_TYPE: 'A04_GRID',",
+                    "        V_FROM_DT: Ext.getCmp('V_FROM_DT').getValue(),",
+                    "        V_TO_DT: Ext.getCmp('V_TO_DT').getValue(),",
+                    "        V_COMP_ID : parent.Ext.getCmp('GCOMP_ID').getValue(),",
+                    "        V_USR_ID : parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "    },",
+                    "    callback: function(records,operations,success){",
+                    "    }",
+                    "});",
+                    "",
+                    "",
+                    "var A05_Grid_Store = this.getStore('A05_Grid_Store');",
+                    "A05_Grid_Store.removeAll();",
+                    "A05_Grid_Store.load({",
+                    "    params: {",
+                    "        V_TYPE: 'A05_GRID',",
+                    "        V_FROM_DT: Ext.getCmp('V_FROM_DT').getValue(),",
+                    "        V_TO_DT: Ext.getCmp('V_TO_DT').getValue(),",
+                    "        V_COMP_ID : parent.Ext.getCmp('GCOMP_ID').getValue(),",
+                    "        V_USR_ID : parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "    },",
+                    "    callback: function(records,operations,success){",
+                    "    }",
+                    "});",
+                    "",
+                    "var A06_Grid_Store = this.getStore('A06_Grid_Store');",
+                    "A06_Grid_Store.removeAll();",
+                    "A06_Grid_Store.load({",
+                    "    params: {",
+                    "        V_TYPE: 'A06_GRID',",
+                    "        V_FROM_DT: Ext.getCmp('V_FROM_DT').getValue(),",
+                    "        V_TO_DT: Ext.getCmp('V_TO_DT').getValue(),",
+                    "        V_COMP_ID : parent.Ext.getCmp('GCOMP_ID').getValue(),",
+                    "        V_USR_ID : parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "    },",
+                    "    callback: function(records,operations,success){",
+                    "    }",
+                    "});",
+                    "",
+                    "var A07_Grid_Store = this.getStore('A07_Grid_Store');",
+                    "A07_Grid_Store.removeAll();",
+                    "A07_Grid_Store.load({",
+                    "    params: {",
+                    "        V_TYPE: 'A07_GRID',",
+                    "        V_FROM_DT: Ext.getCmp('V_FROM_DT').getValue(),",
+                    "        V_TO_DT: Ext.getCmp('V_TO_DT').getValue(),",
+                    "        V_COMP_ID : parent.Ext.getCmp('GCOMP_ID').getValue(),",
+                    "        V_USR_ID : parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "    },",
+                    "    callback: function(records,operations,success){",
+                    "    }",
+                    "});",
+                    "",
+                    "var A08_Grid_Store = this.getStore('A08_Grid_Store');",
+                    "A08_Grid_Store.removeAll();",
+                    "A08_Grid_Store.load({",
+                    "    params: {",
+                    "        V_TYPE: 'A08_GRID',",
+                    "        V_FROM_DT: Ext.getCmp('V_FROM_DT').getValue(),",
+                    "        V_TO_DT: Ext.getCmp('V_TO_DT').getValue(),",
+                    "        V_COMP_ID : parent.Ext.getCmp('GCOMP_ID').getValue(),",
+                    "        V_USR_ID : parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "    },",
+                    "    callback: function(records,operations,success){",
+                    "    }",
+                    "});",
+                    "",
+                    "var A09_Grid_Store = this.getStore('A09_Grid_Store');",
+                    "A09_Grid_Store.removeAll();",
+                    "A09_Grid_Store.load({",
+                    "    params: {",
+                    "        V_TYPE: 'A09_GRID',",
+                    "        V_FROM_DT: Ext.getCmp('V_FROM_DT').getValue(),",
+                    "        V_TO_DT: Ext.getCmp('V_TO_DT').getValue(),",
+                    "        V_COMP_ID : parent.Ext.getCmp('GCOMP_ID').getValue(),",
+                    "        V_USR_ID : parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "    },",
+                    "    callback: function(records,operations,success){",
+                    "    }",
+                    "});"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "selBtnClick",
+            "designerId": "3ee16489-6cd0-4500-9edd-4b8858b1b87c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#saveBtn",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "saveBtnClick",
+                "implHandler": [
+                    "alert('save');"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "saveBtnClick",
+            "designerId": "ef568c00-bc5d-46fd-811f-337f1f9f1e48"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#delBtn",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "delBtnClick",
+                "implHandler": [
+                    "alert('delete');"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "delBtnClick",
+            "designerId": "7a455471-5788-496d-94ba-413ede283de7"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#clsBtn",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "clsBtnClick",
+                "implHandler": [
+                    "var tab=parent.Ext.getCmp('myTab');",
+                    "var activeTab=tab.getActiveTab();",
+                    "var tabIndex=tab.items.indexOf(activeTab);",
+                    "tab.remove(tabIndex,true);"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "clsBtnClick",
+            "designerId": "edf8712e-254b-4119-b4fa-facfe79d72df"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mysearchform textfield[name=search_field]",
+                "designer|targetType": "Ext.form.field.Text",
+                "fn": "tfEnter",
+                "implHandler": [
+                    "\tif (e.getKey() == e.ENTER) {",
+                    "\t\tthis.selBtnClick();",
+                    "\t}"
+                ],
+                "name": "specialkey",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "tfEnter",
+            "designerId": "d3a28083-c87d-4d1f-bcb1-bcbe689a07ff"
+        }
+    ]
+}

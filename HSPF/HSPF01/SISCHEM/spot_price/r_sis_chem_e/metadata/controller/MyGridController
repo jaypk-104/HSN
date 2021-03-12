@@ -1,0 +1,233 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyGridController"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "stores": "typedarray"
+    },
+    "name": "MyController1",
+    "designerId": "4db8f12d-0785-492f-9a8d-458daae53eab",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#gridAddBtn",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "gridAddBtnClick",
+                "implHandler": [
+                    "//var popup = Ext.create(\"B_COMP_HSPF.view.WinAddRow\");",
+                    "//popup.show();",
+                    "//Ext.getCmp('rowCount').setValue(1);"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "gridAddBtnClick",
+            "designerId": "13040dec-bcdf-40aa-91bc-77432eb7a387"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#gridDelBtn",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "gridDelBtnClick",
+                "implHandler": [
+                    "/*",
+                    "var store = Ext.getStore('MyStore');",
+                    "    \tvar gridRecord = Ext.getCmp('myGrid').getSelectionModel().getSelection();",
+                    "",
+                    "    \tif(gridRecord.length > 0) {",
+                    "    \t\tExt.Msg.confirm('확인','삭제하시겠습니까?', function(button){",
+                    "    \t\t\tif(button == 'yes') {",
+                    "    \t\t\t\tfor(var i=0; i<gridRecord.length; i++) {",
+                    "    \t\t    \t\tif(gridRecord[i].data['V_TYPE']=='V') {",
+                    "    \t\t    \t\t\tgridRecord[i].data['V_TYPE'] = 'D';",
+                    "    \t\t    \t\t}",
+                    "    \t\t    \t}",
+                    "    \t\t    \tstore.sync({",
+                    "    \t\t\t\t\tparams: {",
+                    "    \t\t\t\t\t\tV_USR_ID : 'admin',//parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "    \t\t\t\t\t},",
+                    "    \t\t    \t\tcallback: function(records, operation, success) {",
+                    "    \t\t    \t\t\tstore.reload();",
+                    "    \t\t\t\t\t}",
+                    "    \t\t    \t});",
+                    "    \t\t\t}",
+                    "    \t\t});",
+                    "    \t}",
+                    "        */"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "gridDelBtnClick",
+            "designerId": "94e10ebc-653f-4489-816f-bd6bce92cf2c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#xlsxDown",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "xlsxDownClick",
+                "implHandler": [
+                    "var currentDate = Ext.util.Format.date(new Date(), 'Y-m-d His');",
+                    "    \tvar grid = Ext.getCmp('myGrid');",
+                    "    \tgrid.saveDocumentAs({",
+                    "            type: 'xlsx',",
+                    "            title: 'test', //엑셀내타이틀",
+                    "            fileName: currentDate+'.xlsx' //엑셀파일이름",
+                    "\t\t});"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "xlsxDownClick",
+            "designerId": "c67a116e-3a48-4fbc-bcbd-0ccfbed0222f"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#xmlDown",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "xmlDownClick",
+                "implHandler": [
+                    "var currentDate = Ext.util.Format.date(new Date(), 'Y-m-d His');",
+                    "    \tvar grid = Ext.getCmp('myGrid');",
+                    "    \tgrid.saveDocumentAs({    ",
+                    "            type: 'xml',  ",
+                    "            title: 'test', //엑셀내타이틀",
+                    "            fileName: currentDate+'.xml' //엑셀파일이름",
+                    "\t\t});"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "xmlDownClick",
+            "designerId": "1f9dd186-8ec0-4d53-acc5-6a81bc0a7563"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "[cls=execl_btn]",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onButtonClick",
+                "implHandler": [
+                    "",
+                    "var prefix = button.id.substring(0,3);",
+                    "",
+                    "var currentDate = Ext.util.Format.date(new Date(), 'Y-m-d His');",
+                    "var grid = Ext.getCmp(prefix + '_Grid');",
+                    "grid.saveDocumentAs({",
+                    "    type: 'xlsx',",
+                    "    title: '주간스팟가격', //엑셀내타이틀",
+                    "    fileName: currentDate+'.xlsx' //엑셀파일이름",
+                    "});"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onButtonClick",
+            "designerId": "0ba0aa15-6a4a-4ca4-bef4-0ef8e8b84595"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#A03_ChartDown",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "onButtonClick1",
+                "implHandler": [
+                    "Ext.getCmp('A03_Chart').download();"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onButtonClick1",
+            "designerId": "cf7cbf8d-d471-40d1-8668-25c009551784"
+        }
+    ]
+}

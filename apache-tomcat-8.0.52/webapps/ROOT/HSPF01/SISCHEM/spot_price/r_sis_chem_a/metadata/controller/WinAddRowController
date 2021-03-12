@@ -1,0 +1,61 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "WinAddRowController"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "MyController1",
+    "designerId": "ecd90e14-c773-40d7-9dbc-41a4df4bf202",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#addRowBtn",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "addRowBtnClick",
+                "implHandler": [
+                    "var store = Ext.getStore('MyStore');",
+                    "    \tvar count = store.getCount();",
+                    "    \tvar rowCount = Number(Ext.getCmp('rowCount').getValue());",
+                    "    \t",
+                    "    \tfor(var i=0; i<rowCount; i++) {",
+                    "    \t\tcount = count + 1;",
+                    "    \t\tvar rec = Ext.create('Common.model.MyModel', {",
+                    "    \t\t\t//USR_ID: parent.Ext.getCmp('GUSER_ID').getValue()",
+                    "    \t\t});",
+                    "    \t\tstore.insert(count-1, rec);",
+                    "    \t}",
+                    "    \t",
+                    "    \tvar win = Ext.WindowManager.getActive();",
+                    "    \tif(win){",
+                    "    \t     win.close();",
+                    "    \t}"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "addRowBtnClick",
+            "designerId": "4fdfc3b4-8c46-49bd-b082-67e20812beca"
+        }
+    ]
+}

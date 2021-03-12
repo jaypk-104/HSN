@@ -1,0 +1,41 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "MyGridController",
+            "TbButtonController"
+        ],
+        "models": [
+            "MyModel"
+        ],
+        "name": "R_STEEL_DOC_PRICE2",
+        "stores": [
+            "MyStore",
+            "A02_Grid_Store",
+            "A06_Grid_Store",
+            "A07_Grid_Store",
+            "A02_Chart_Store",
+            "A06_Chart_Store",
+            "A07_Chart_Store"
+        ],
+        "views": [
+            "MySearchForm",
+            "MyViewport",
+            "TbButton"
+        ]
+    },
+    "configAlternates": {
+        "controllers": "typedarray",
+        "name": "string",
+        "views": "typedarray",
+        "models": "typedarray",
+        "stores": "typedarray"
+    },
+    "name": "Application",
+    "designerId": "application"
+}

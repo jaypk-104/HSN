@@ -1,0 +1,81 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "C12_Grid_Store",
+        "model": "MyModel",
+        "storeId": "C12_Grid_Store"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
+    "name": "C11_Grid_Store1",
+    "designerId": "9b58858d-eda3-4b49-acaf-a675419eb5ee",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{read: 'sql/R_SIS_CHEM.jsp',",
+                    "                     create: 'sql/R_SIS_CHEM.jsp',",
+                    "                     destroy: 'sql/R_SIS_CHEM.jsp',",
+                    "                     update: 'sql/R_SIS_CHEM.jsp'}"
+                ]
+            },
+            "configAlternates": {
+                "api": "object"
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "9bd635ef-4174-4db8-9bfc-273aa361d166",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "resultList"
+                    },
+                    "configAlternates": {
+                        "rootProperty": "string"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "e9ffa3b4-2208-4020-bafa-88654379adfd"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "encode": true,
+                        "rootProperty": "data",
+                        "writeAllFields": true
+                    },
+                    "configAlternates": {
+                        "encode": "boolean",
+                        "rootProperty": "string",
+                        "writeAllFields": "boolean"
+                    },
+                    "name": "MyJsonWriter",
+                    "designerId": "cd82b43a-71d6-46f0-bcc8-e80271657e46"
+                }
+            ]
+        }
+    ]
+}

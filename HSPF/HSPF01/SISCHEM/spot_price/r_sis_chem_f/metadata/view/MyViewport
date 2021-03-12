@@ -1,0 +1,2660 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|initialView": true,
+        "designer|userAlias": "myviewport",
+        "designer|userClassName": "MyViewport",
+        "height": 250,
+        "layout": "vbox",
+        "style": "background-color: white",
+        "width": 400
+    },
+    "configAlternates": {
+        "container|align": "string",
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "layout": "string",
+        "style": "string",
+        "width": "auto"
+    },
+    "name": "MyViewport",
+    "designerId": "89189520-9856-4451-a0a6-c14a770eb6de",
+    "viewControllerInstanceId": "f60925e2-1c7d-4829-b245-a37021881ea2",
+    "viewModelInstanceId": "f9364cbf-2ee7-4830-a78e-9a8fac7525de",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "margin": "5 0 0 0"
+            },
+            "configAlternates": {
+                "margin": "auto"
+            },
+            "name": "tbbutton",
+            "designerId": "fb3d602a-7101-486e-8915-da93985d2cd7",
+            "masterInstanceId": "e7f33d9a-f118-4ba7-a742-6a3e72294cc0"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": "0 10 0 10",
+                "layout|margins": "",
+                "margin": "-5 0 0 0",
+                "padding": ""
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "layout|margins": "string",
+                "margin": "auto",
+                "padding": "auto"
+            },
+            "name": "mysearchform",
+            "designerId": "bd09cb23-cc15-4a0b-b99f-97e65cde7be4",
+            "masterInstanceId": "eb059da7-da6c-414c-b459-a4461b4b5d5c"
+        },
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "flex": 1,
+                "layout": "fit",
+                "padding": "0 10 0 10"
+            },
+            "configAlternates": {
+                "flex": "number",
+                "layout": "string",
+                "padding": "auto"
+            },
+            "name": "MyContainer1",
+            "designerId": "660f1753-8863-4342-b33d-bc05d6bfbdf9",
+            "cn": [
+                {
+                    "type": "Ext.tab.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "activeTab": 0
+                    },
+                    "configAlternates": {
+                        "activeTab": "auto"
+                    },
+                    "name": "MyTabPanel",
+                    "designerId": "263044fc-71aa-4176-b6c4-52fe3a56b80a",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "layout": "vbox",
+                                "title": "AN(Acrylonitrile)"
+                            },
+                            "configAlternates": {
+                                "title": "string",
+                                "container|align": "string",
+                                "layout": "string"
+                            },
+                            "name": "MyPanel",
+                            "designerId": "8a283a76-b507-49d2-a0c6-f03795564c9a",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig",
+                                    "designerId": "a072889b-e6bf-4137-a197-46554181f863"
+                                },
+                                {
+                                    "type": "Ext.grid.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bodyBorder": false,
+                                        "header": false,
+                                        "height": 300,
+                                        "id": "F01_Grid",
+                                        "layout|flex": 1,
+                                        "store": "F01_Grid_Store",
+                                        "style": "border: 1px solid #659DDC; padding: 5px;",
+                                        "tbar": [
+                                            "[",
+                                            "    {",
+                                            "        xtype: 'container',",
+                                            "        flex: 1",
+                                            "    }, ",
+                                            "    {",
+                                            "        xtype: 'button',",
+                                            "        glyph: 'xf1c3@FontAwesome',",
+                                            "        id: 'F01_xlsxDown',",
+                                            "        cfg: {",
+                                            "        type: 'excel07',",
+                                            "        ext: 'xlsx'",
+                                            "        },",
+                                            "        cls:'execl_btn',",
+                                            "        iconCls: 'grid-excel-btn',",
+                                            "",
+                                            "    },",
+                                            "    {",
+                                            "        xtype: 'button',",
+                                            "        id: 'F01_ChartDown',",
+                                            "        text: 'chart down',",
+                                            "        cls: 'chart_btn',",
+                                            "        ",
+                                            "",
+                                            "    }",
+                                            "",
+                                            "    ",
+                                            "    ]"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "tbar": "object",
+                                        "bodyBorder": "boolean",
+                                        "designer|userAlias": "string",
+                                        "designer|userClassName": "string",
+                                        "header": "boolean",
+                                        "style": "string",
+                                        "id": "string",
+                                        "store": "store",
+                                        "height": "auto",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyGrid4",
+                                    "designerId": "390baaaa-d63e-412a-84ec-c1d4b4f69cef",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "tbar",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "Ext.view.Table",
+                                            "reference": {
+                                                "name": "viewConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "enableTextSelection": true
+                                            },
+                                            "configAlternates": {
+                                                "enableTextSelection": "boolean"
+                                            },
+                                            "name": "MyTable",
+                                            "designerId": "b2c0df2c-d738-48bf-9b2f-9566bd925456",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "format",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.RowNumberer",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 40
+                                            },
+                                            "configAlternates": {
+                                                "width": "number"
+                                            },
+                                            "name": "MyRowNumberer",
+                                            "designerId": "035ac36c-b196-4d4a-b3cb-f16340bf6876"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "hidden": true,
+                                                "text": "V_TYPE"
+                                            },
+                                            "configAlternates": {
+                                                "hidden": "boolean",
+                                                "text": "string"
+                                            },
+                                            "name": "MyColumn4",
+                                            "designerId": "f0f5aaee-4d1a-44f0-be09-f6b42e35abf4"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Date",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "PDATE",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "    format: 'Short Date'",
+                                                    "}"
+                                                ],
+                                                "format": "Y-m-d",
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "날짜",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyDateColumn",
+                                            "designerId": "154e6533-5574-4a9c-83d7-b0562cc1442d"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "NEWS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "NWE(FOB)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn",
+                                            "designerId": "5c352bf6-4891-4328-b414-db0986925f68"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "USGS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "USG(FOB)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn1",
+                                            "designerId": "509070d8-1307-46d8-a36a-10f9e9adca11"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "KORS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "Korea(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn2",
+                                            "designerId": "63ba2ebc-2ba7-4a3e-aff8-ca2cce75a801"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "TAIS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "Taiwan(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn6",
+                                            "designerId": "d717e4e3-70be-4d22-8f23-af028201411a"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "SEAS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "SE Asia(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn3",
+                                            "designerId": "337e3748-cd23-4d0a-92e5-f0fef1ef57cc"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "JAPS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "Japan(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn5",
+                                            "designerId": "d4fb1951-bc0f-417b-867c-72d0d59a00c2"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.Exporter",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyGridExporterPlugin",
+                                            "designerId": "6834248a-8cba-4997-8444-ebd97ce942da"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.CellEditing",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyCellEditingPlugin",
+                                            "designerId": "c5cba055-4926-47c5-b61b-eec65b2b6b19"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.chart.CartesianChart",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "colors": [
+                                            "[\"#115fa6\", \"#94ae0a\", \"#a61120\", \"#ff8809\", \"#ffd13e\", \"#a61187\", \"#24ad9a\", \"#7c7474\", \"#a66111\"]"
+                                        ],
+                                        "flex": 1,
+                                        "height": 250,
+                                        "id": "F01_Chart",
+                                        "innerPadding": [
+                                            "{\"top\":80,\"left\":110,\"right\":110,\"bottom\":80}"
+                                        ],
+                                        "layout|flex": 1,
+                                        "store": "F01_Chart_Store"
+                                    },
+                                    "configAlternates": {
+                                        "colors": "array",
+                                        "designer|userAlias": "string",
+                                        "designer|userClassName": "string",
+                                        "height": "auto",
+                                        "width": "auto",
+                                        "flex": "number",
+                                        "innerPadding": "object",
+                                        "store": "store",
+                                        "tbar": "object",
+                                        "id": "string",
+                                        "hidden": "boolean",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyLineChart1",
+                                    "designerId": "ccf16dc5-c6f4-45f2-9520-671af73ed937",
+                                    "isBuiltIn": true,
+                                    "iconCls": "icon-line-chart",
+                                    "autoName": "MyLineChart",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "tbar",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "Ext.chart.axis.Category",
+                                            "reference": {
+                                                "name": "axes",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fields": [
+                                                    "PDATE"
+                                                ],
+                                                "title": null
+                                            },
+                                            "configAlternates": {
+                                                "fields": "typedarray",
+                                                "title": "string"
+                                            },
+                                            "name": "MyCategoryAxis",
+                                            "designerId": "0fa8d6f7-c50e-42f6-9cfc-d8a802fba690"
+                                        },
+                                        {
+                                            "type": "Ext.chart.axis.Numeric",
+                                            "reference": {
+                                                "name": "axes",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fields": [
+                                                    "MAXS"
+                                                ],
+                                                "grid": [
+                                                    "{",
+                                                    "    odd: {",
+                                                    "        fill: '#e8e8e8'",
+                                                    "    }",
+                                                    "}"
+                                                ],
+                                                "position": "left",
+                                                "title": null
+                                            },
+                                            "configAlternates": {
+                                                "fields": "typedarray",
+                                                "grid": "object",
+                                                "position": "string",
+                                                "title": "string"
+                                            },
+                                            "name": "MyNumericAxis",
+                                            "designerId": "3bff7a82-342d-432f-800f-a788015b1357"
+                                        },
+                                        {
+                                            "type": "Ext.chart.series.Line",
+                                            "reference": {
+                                                "name": "series",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "label": [
+                                                    "{display:'insideEnd',field:'MAXS', renderer: function(v) {",
+                                                    "                            return Ext.util.Format.number(v, '0,000');",
+                                                    "                        }}"
+                                                ],
+                                                "marker": [
+                                                    "{type:'circle'}"
+                                                ],
+                                                "xField": "PDATE",
+                                                "yField": [
+                                                    "MAXS"
+                                                ]
+                                            },
+                                            "configAlternates": {
+                                                "xField": "datafield",
+                                                "label": "object",
+                                                "marker": "object",
+                                                "yField": "typedarray"
+                                            },
+                                            "name": "MyLineSeries",
+                                            "designerId": "42965b85-a39e-4b48-a425-cd9e06f7b8eb"
+                                        },
+                                        {
+                                            "type": "Ext.chart.series.Line",
+                                            "reference": {
+                                                "name": "series",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "colors": [
+                                                    "[\"#115fa6\", \"#94ae0a\", \"#a61120\", \"#ff8809\", \"#ffd13e\", \"#a61187\", \"#24ad9a\", \"#7c7474\", \"#a66111\"]"
+                                                ],
+                                                "xField": "x"
+                                            },
+                                            "configAlternates": {
+                                                "colors": "array",
+                                                "xField": "datafield"
+                                            },
+                                            "name": "MyLineSeries1",
+                                            "designerId": "ed5ab6fc-201a-4570-bd90-e1a6ac984d28"
+                                        },
+                                        {
+                                            "type": "Ext.chart.interactions.PanZoom",
+                                            "reference": {
+                                                "name": "interactions",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyPanZoomInteraction",
+                                            "designerId": "ab6a9f35-f801-475a-999b-815c55a27c97"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "layout": "vbox",
+                                "title": "MEG(Mono ethylene glycol)"
+                            },
+                            "configAlternates": {
+                                "title": "string",
+                                "container|align": "string",
+                                "layout": "string"
+                            },
+                            "name": "MyPanel1",
+                            "designerId": "d4b664b1-1e54-4e05-88a4-15d7ddc1ae4a",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig1",
+                                    "designerId": "c04609c5-1217-488c-9fd7-46d77ffa885b"
+                                },
+                                {
+                                    "type": "Ext.grid.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bodyBorder": false,
+                                        "header": false,
+                                        "height": 300,
+                                        "id": "F02_Grid",
+                                        "layout|flex": 1,
+                                        "store": "F02_Grid_Store",
+                                        "style": "border: 1px solid #659DDC; padding: 5px;",
+                                        "tbar": [
+                                            "[",
+                                            "    {",
+                                            "        xtype: 'container',",
+                                            "        flex: 1",
+                                            "    }, ",
+                                            "    {",
+                                            "        xtype: 'button',",
+                                            "        glyph: 'xf1c3@FontAwesome',",
+                                            "        id: 'F02_xlsxDown',",
+                                            "        cfg: {",
+                                            "        type: 'excel07',",
+                                            "        ext: 'xlsx'",
+                                            "        },",
+                                            "        cls:'execl_btn',",
+                                            "        iconCls: 'grid-excel-btn',",
+                                            "",
+                                            "    },",
+                                            "",
+                                            "    ]"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "tbar": "object",
+                                        "bodyBorder": "boolean",
+                                        "designer|userAlias": "string",
+                                        "designer|userClassName": "string",
+                                        "header": "boolean",
+                                        "style": "string",
+                                        "id": "string",
+                                        "store": "store",
+                                        "height": "auto",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyGrid6",
+                                    "designerId": "8af309ba-b3a4-4a05-bf28-5d23920cc1a2",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "tbar",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "Ext.view.Table",
+                                            "reference": {
+                                                "name": "viewConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "enableTextSelection": true
+                                            },
+                                            "configAlternates": {
+                                                "enableTextSelection": "boolean"
+                                            },
+                                            "name": "MyTable",
+                                            "designerId": "8cb423ae-8877-496f-bf5d-b46e3e74a913",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "format",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.RowNumberer",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 40
+                                            },
+                                            "configAlternates": {
+                                                "width": "number"
+                                            },
+                                            "name": "MyRowNumberer",
+                                            "designerId": "926d5f48-7dec-41d4-b5e8-244b85f57348"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "hidden": true,
+                                                "text": "V_TYPE"
+                                            },
+                                            "configAlternates": {
+                                                "hidden": "boolean",
+                                                "text": "string"
+                                            },
+                                            "name": "MyColumn4",
+                                            "designerId": "2b9895a6-6cd6-4fd9-a66a-3c2a46655f56"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Date",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "PDATE",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "    format: 'Short Date'",
+                                                    "}"
+                                                ],
+                                                "format": "Y-m-d",
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "날짜",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyDateColumn",
+                                            "designerId": "7749ecff-b9a1-45c9-aee2-baa188801171"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "NEWS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "NWE(FOB)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn",
+                                            "designerId": "4f29ad8a-4af5-4373-9031-8560b14ca0de"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "USGS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "USG(FOB)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn1",
+                                            "designerId": "bbe61d62-99e1-4b7d-a5e9-2b68832213ca"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "KORS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "Korea(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn2",
+                                            "designerId": "305907d6-5086-4c5e-b2ae-02698e3ef662"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "TAIS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "Taiwan(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn6",
+                                            "designerId": "b6228722-e208-47d4-9c39-480cb84201da"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "SEAS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "SE Asia(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn3",
+                                            "designerId": "420e8fa1-83b9-4a49-a494-1eb9ff7674f8"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "JAPS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "Japan(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn5",
+                                            "designerId": "686769ef-b325-4775-8eb9-5188c30a60ca"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.Exporter",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyGridExporterPlugin",
+                                            "designerId": "96ccebca-c088-4d4e-8e9e-14ae400b33db"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.CellEditing",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyCellEditingPlugin",
+                                            "designerId": "5718982e-5e60-49a1-bcf5-c1ae93d70762"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "layout": "vbox",
+                                "title": "Caprolactam"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "layout": "string",
+                                "title": "string"
+                            },
+                            "name": "MyPanel2",
+                            "designerId": "34a0e5ad-a575-4a97-82f8-7ac7b3f4e56b",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig2",
+                                    "designerId": "8aabe780-3d38-46f9-a1d9-84ffe0d0c3fd"
+                                },
+                                {
+                                    "type": "Ext.grid.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bodyBorder": false,
+                                        "flex": 1,
+                                        "header": false,
+                                        "height": 300,
+                                        "id": "F03_Grid",
+                                        "store": "F03_Grid_Store",
+                                        "style": "border: 1px solid #659DDC; padding: 5px;",
+                                        "tbar": [
+                                            "[",
+                                            "    {",
+                                            "        xtype: 'container',",
+                                            "        flex: 1",
+                                            "    }, ",
+                                            "    {",
+                                            "        xtype: 'button',",
+                                            "        glyph: 'xf1c3@FontAwesome',",
+                                            "        id: 'F03_xlsxDown',",
+                                            "        cfg: {",
+                                            "        type: 'excel07',",
+                                            "        ext: 'xlsx'",
+                                            "        },",
+                                            "        cls:'execl_btn',",
+                                            "        iconCls: 'grid-excel-btn',",
+                                            "",
+                                            "    },",
+                                            "",
+                                            "    ",
+                                            "    ]"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "tbar": "object",
+                                        "bodyBorder": "boolean",
+                                        "designer|userAlias": "string",
+                                        "designer|userClassName": "string",
+                                        "header": "boolean",
+                                        "style": "string",
+                                        "id": "string",
+                                        "store": "store",
+                                        "height": "auto",
+                                        "flex": "number"
+                                    },
+                                    "name": "MyGrid1",
+                                    "designerId": "4b8507ce-9838-47d1-9eac-c7780b546ece",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "tbar",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "Ext.view.Table",
+                                            "reference": {
+                                                "name": "viewConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "enableTextSelection": true
+                                            },
+                                            "configAlternates": {
+                                                "enableTextSelection": "boolean"
+                                            },
+                                            "name": "MyTable",
+                                            "designerId": "a4bf3055-0ac6-4425-a7cb-ece52167fd2f",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "format",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.RowNumberer",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 40
+                                            },
+                                            "configAlternates": {
+                                                "width": "number"
+                                            },
+                                            "name": "MyRowNumberer",
+                                            "designerId": "be289c4b-455e-4ae4-a1b5-b8504ddd983a"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "hidden": true,
+                                                "text": "V_TYPE"
+                                            },
+                                            "configAlternates": {
+                                                "hidden": "boolean",
+                                                "text": "string"
+                                            },
+                                            "name": "MyColumn4",
+                                            "designerId": "848a1848-1d4c-42cc-bc9c-146dc33b5920"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Date",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "PDATE",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "    format: 'Short Date'",
+                                                    "}"
+                                                ],
+                                                "format": "Y-m-d",
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "날짜",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyDateColumn",
+                                            "designerId": "aa5fde3a-be2b-4809-8f39-9f75fe0a0d29"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "NEWS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "NWE(FOB)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn",
+                                            "designerId": "751d4f7a-05e8-4131-8da2-4fcac5b68166"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "USGS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "USG(FOB)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn1",
+                                            "designerId": "c9ebbb6a-7ad1-488e-aa1b-52a148f97542"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "KORS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "Korea(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn2",
+                                            "designerId": "4d840ec7-f333-45b3-b65c-68b999efc340"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "TAIS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "Taiwan(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn6",
+                                            "designerId": "b8033938-0827-40e9-bd4f-2bfbcc1d9c21"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "SEAS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "SE Asia(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn3",
+                                            "designerId": "10f7ab3f-8640-417a-97de-7a6e4701adf7"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "JAPS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "Japan(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn5",
+                                            "designerId": "e171aad5-7412-4b6d-8cc7-88e9ab48cd1f"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.Exporter",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyGridExporterPlugin",
+                                            "designerId": "6e2bbc44-9a22-4b0c-ad26-1014d79056c0"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.CellEditing",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyCellEditingPlugin",
+                                            "designerId": "c7a53273-fdbb-44a2-b9a4-9a796b1df6c4"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "layout": "vbox",
+                                "title": "TPA(Terephthalic acid)"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "layout": "string",
+                                "title": "string"
+                            },
+                            "name": "MyPanel3",
+                            "designerId": "814b0609-3542-4df7-aa55-519fe88ed5b4",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig2",
+                                    "designerId": "f5f656f7-b466-442f-83c0-4a0efe5beb1e"
+                                },
+                                {
+                                    "type": "Ext.grid.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bodyBorder": false,
+                                        "flex": 1,
+                                        "header": false,
+                                        "height": 300,
+                                        "id": "F04_Grid",
+                                        "layout|flex": 1,
+                                        "store": "F04_Grid_Store",
+                                        "style": "border: 1px solid #659DDC; padding: 5px;",
+                                        "tbar": [
+                                            "[",
+                                            "    {",
+                                            "        xtype: 'container',",
+                                            "        flex: 1",
+                                            "    }, ",
+                                            "    {",
+                                            "        xtype: 'button',",
+                                            "        glyph: 'xf1c3@FontAwesome',",
+                                            "        id: 'F04_xlsxDown',",
+                                            "        cfg: {",
+                                            "        type: 'excel07',",
+                                            "        ext: 'xlsx'",
+                                            "        },",
+                                            "        cls:'execl_btn',",
+                                            "        iconCls: 'grid-excel-btn',",
+                                            "",
+                                            "    },",
+                                            "",
+                                            "    ",
+                                            "    ]"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "tbar": "object",
+                                        "bodyBorder": "boolean",
+                                        "designer|userAlias": "string",
+                                        "designer|userClassName": "string",
+                                        "header": "boolean",
+                                        "style": "string",
+                                        "id": "string",
+                                        "store": "store",
+                                        "height": "auto",
+                                        "flex": "number",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyGrid5",
+                                    "designerId": "a4ddc11c-17b4-4c8a-8ae7-3f527bce95b4",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "tbar",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "Ext.view.Table",
+                                            "reference": {
+                                                "name": "viewConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "enableTextSelection": true
+                                            },
+                                            "configAlternates": {
+                                                "enableTextSelection": "boolean"
+                                            },
+                                            "name": "MyTable",
+                                            "designerId": "d8507494-7f41-4f5e-b31b-cec78765db20",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "format",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.RowNumberer",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 40
+                                            },
+                                            "configAlternates": {
+                                                "width": "number"
+                                            },
+                                            "name": "MyRowNumberer",
+                                            "designerId": "d95bbf70-4b8b-4e9a-9e8b-a2bff70c383f"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "hidden": true,
+                                                "text": "V_TYPE"
+                                            },
+                                            "configAlternates": {
+                                                "hidden": "boolean",
+                                                "text": "string"
+                                            },
+                                            "name": "MyColumn4",
+                                            "designerId": "7b08d7cd-d930-4061-ac7f-7a704882e855"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Date",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "PDATE",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "    format: 'Short Date'",
+                                                    "}"
+                                                ],
+                                                "format": "Y-m-d",
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "날짜",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyDateColumn",
+                                            "designerId": "6f6c18b7-1919-4b59-939c-c2d0484eec4a"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "NEWS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "NWE(FOB)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn",
+                                            "designerId": "256373d2-155c-42a1-9b1b-ec4234971b46"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "USGS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "USG(FOB)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn1",
+                                            "designerId": "2d746a4d-e22f-4246-b745-5fbb8d34e9e5"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "KORS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "Korea(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn2",
+                                            "designerId": "57ebe78d-c9cd-4c22-bb78-7ecf7728b3e8"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "TAIS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "Taiwan(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn6",
+                                            "designerId": "38dec81c-7248-4e45-8cc3-8165090e975e"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "SEAS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "SE Asia(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn3",
+                                            "designerId": "629f1af3-82cb-4fbf-b6e6-f59d1d790189"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "JAPS",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "Japan(CFR)",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn5",
+                                            "designerId": "af348318-32e9-492f-9a4c-1551d7154c97"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.Exporter",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyGridExporterPlugin",
+                                            "designerId": "14389d6b-561f-4b3f-b319-15450f8d6c53"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.CellEditing",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyCellEditingPlugin",
+                                            "designerId": "d7d0093c-ce1a-4d90-b00d-d7119c3bb6c5"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "layout": "vbox",
+                                "title": "Adipic Acid - China"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "layout": "string",
+                                "title": "string"
+                            },
+                            "name": "MyPanel4",
+                            "designerId": "fe70252b-c974-4cd6-9f24-906f83eee1df",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig2",
+                                    "designerId": "3c7e5990-d22f-419f-9c1e-258cbc07cd2b"
+                                },
+                                {
+                                    "type": "Ext.grid.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bodyBorder": false,
+                                        "flex": 1,
+                                        "header": false,
+                                        "id": "F05_Grid",
+                                        "layout|flex": 1,
+                                        "store": "F05_Grid_Store",
+                                        "style": "border: 1px solid #659DDC; padding: 5px;",
+                                        "tbar": [
+                                            "[",
+                                            "    {",
+                                            "        xtype: 'container',",
+                                            "        flex: 1",
+                                            "    }, ",
+                                            "    {",
+                                            "        xtype: 'button',",
+                                            "        glyph: 'xf1c3@FontAwesome',",
+                                            "        id: 'F05_xlsxDown',",
+                                            "        cfg: {",
+                                            "        type: 'excel07',",
+                                            "        ext: 'xlsx'",
+                                            "        },",
+                                            "        cls:'execl_btn',",
+                                            "        iconCls: 'grid-excel-btn',",
+                                            "",
+                                            "    }]"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "tbar": "object",
+                                        "bodyBorder": "boolean",
+                                        "designer|userAlias": "string",
+                                        "designer|userClassName": "string",
+                                        "header": "boolean",
+                                        "style": "string",
+                                        "id": "string",
+                                        "store": "store",
+                                        "height": "auto",
+                                        "flex": "number",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyGrid10",
+                                    "designerId": "d490ac07-982c-4fe6-bd3f-cbe55924acbc",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "tbar",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "Ext.view.Table",
+                                            "reference": {
+                                                "name": "viewConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "enableTextSelection": true
+                                            },
+                                            "configAlternates": {
+                                                "enableTextSelection": "boolean"
+                                            },
+                                            "name": "MyTable",
+                                            "designerId": "f6a7747d-00ef-4bc4-a149-e0e33640cc44",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "format",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.RowNumberer",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 40
+                                            },
+                                            "configAlternates": {
+                                                "width": "number"
+                                            },
+                                            "name": "MyRowNumberer",
+                                            "designerId": "dd1b96fa-2f85-47d1-8499-0e8c330eef0b"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "hidden": true,
+                                                "text": "V_TYPE"
+                                            },
+                                            "configAlternates": {
+                                                "hidden": "boolean",
+                                                "text": "string"
+                                            },
+                                            "name": "MyColumn4",
+                                            "designerId": "0aa1e9e7-a6fb-43a9-957d-3c3b6723e077"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Date",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "PDATE",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "    format: 'Short Date'",
+                                                    "}"
+                                                ],
+                                                "format": "Y-m-d",
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "날짜",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyDateColumn",
+                                            "designerId": "d2ad72be-1bd1-4b57-92c8-6d514e5e97fd"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "REGION",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "지역",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn",
+                                            "designerId": "82f5f6f3-4b7a-40a5-8305-33deb9805fb4"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "PRICE",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "가격",
+                                                "width": 370
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn1",
+                                            "designerId": "2ce65ab9-2b22-4aed-81d9-d0dba0ffdbbe"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "REMARK",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "비고",
+                                                "width": 760
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn9",
+                                            "designerId": "73dfa8b5-814c-40bb-82fe-07152c72bdd7"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.Exporter",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyGridExporterPlugin",
+                                            "designerId": "f9219f05-4c43-42ad-a3db-f6d40bfb7d8e"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.CellEditing",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyCellEditingPlugin",
+                                            "designerId": "3ee62cc6-262e-4c8b-a2d0-952e74274167"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "layout": "vbox",
+                                "title": "PTMEG - China"
+                            },
+                            "configAlternates": {
+                                "container|align": "string",
+                                "layout": "string",
+                                "title": "string"
+                            },
+                            "name": "MyPanel5",
+                            "designerId": "ea15a2f2-2ae0-4e37-b05a-a6cff2dc7f7e",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig2",
+                                    "designerId": "fffb996d-f360-40f0-8225-b2d9c1bd6e00"
+                                },
+                                {
+                                    "type": "Ext.grid.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "bodyBorder": false,
+                                        "flex": 1,
+                                        "header": false,
+                                        "id": "F06_Grid",
+                                        "layout|flex": 1,
+                                        "store": "F06_Grid_Store",
+                                        "style": "border: 1px solid #659DDC; padding: 5px;",
+                                        "tbar": [
+                                            "[",
+                                            "    {",
+                                            "        xtype: 'container',",
+                                            "        flex: 1",
+                                            "    }, ",
+                                            "    {",
+                                            "        xtype: 'button',",
+                                            "        glyph: 'xf1c3@FontAwesome',",
+                                            "        id: 'F06_xlsxDown',",
+                                            "        cfg: {",
+                                            "        type: 'excel07',",
+                                            "        ext: 'xlsx'",
+                                            "        },",
+                                            "        cls:'execl_btn',",
+                                            "        iconCls: 'grid-excel-btn',",
+                                            "",
+                                            "    }]"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "tbar": "object",
+                                        "bodyBorder": "boolean",
+                                        "designer|userAlias": "string",
+                                        "designer|userClassName": "string",
+                                        "header": "boolean",
+                                        "style": "string",
+                                        "id": "string",
+                                        "store": "store",
+                                        "height": "auto",
+                                        "flex": "number",
+                                        "layout|flex": "number"
+                                    },
+                                    "name": "MyGrid8",
+                                    "designerId": "fa141236-39b1-4a16-98b0-ae27708c856d",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "tbar",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "Ext.view.Table",
+                                            "reference": {
+                                                "name": "viewConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "enableTextSelection": true
+                                            },
+                                            "configAlternates": {
+                                                "enableTextSelection": "boolean"
+                                            },
+                                            "name": "MyTable",
+                                            "designerId": "985540ee-07e9-4bcb-b66b-94bd397f25d9",
+                                            "customConfigs": [
+                                                {
+                                                    "group": "(Custom Properties)",
+                                                    "name": "format",
+                                                    "type": "string"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.RowNumberer",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "width": 40
+                                            },
+                                            "configAlternates": {
+                                                "width": "number"
+                                            },
+                                            "name": "MyRowNumberer",
+                                            "designerId": "e3f5728e-bc0d-4e66-bb54-b7bca61fc524"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "hidden": true,
+                                                "text": "V_TYPE"
+                                            },
+                                            "configAlternates": {
+                                                "hidden": "boolean",
+                                                "text": "string"
+                                            },
+                                            "name": "MyColumn4",
+                                            "designerId": "9a6ddba4-420f-4b7d-946b-f79bb571aa2e"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Date",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "PDATE",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "    format: 'Short Date'",
+                                                    "}"
+                                                ],
+                                                "format": "Y-m-d",
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "날짜",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyDateColumn",
+                                            "designerId": "437b15c3-c687-4c83-9891-385db9ece123"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "REGION",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "지역",
+                                                "width": 100
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn",
+                                            "designerId": "a1801954-bf5d-4899-92d3-08fcc9ec862b"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "PRICE",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "가격",
+                                                "width": 370
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn1",
+                                            "designerId": "4e3224d3-2101-438f-989b-6b1d4a2ff08b"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "align": "center",
+                                                "dataIndex": "REMARK",
+                                                "enableTextSelection": true,
+                                                "exportStyle": [
+                                                    "{",
+                                                    "                        alignment: {",
+                                                    "                            horizontal: 'Right'",
+                                                    "                        }",
+                                                    "                    }"
+                                                ],
+                                                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                                                "text": "비고",
+                                                "width": 760
+                                            },
+                                            "configAlternates": {
+                                                "align": "string",
+                                                "dataIndex": "datafield",
+                                                "enableTextSelection": "boolean",
+                                                "exportStyle": "object",
+                                                "format": "string",
+                                                "id": "string",
+                                                "style": "string",
+                                                "text": "string",
+                                                "maxWidth": "number",
+                                                "minWidth": "number",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyColumn9",
+                                            "designerId": "e2b48f0f-e0f0-4550-bbe2-d203022d1cf6"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.Exporter",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyGridExporterPlugin",
+                                            "designerId": "6b5c4416-88bd-4a3d-bd2b-b15eb44d0e4e"
+                                        },
+                                        {
+                                            "type": "Ext.grid.plugin.CellEditing",
+                                            "reference": {
+                                                "name": "plugins",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyCellEditingPlugin",
+                                            "designerId": "a2218c31-e0da-4f54-a0bd-904f9edaecd4"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

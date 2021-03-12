@@ -1,0 +1,207 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TbButtonController",
+        "stores": [
+            "MyStore",
+            "F01_Grid_Store",
+            "F02_Grid_Store",
+            "F03_Grid_Store",
+            "F04_Grid_Store",
+            "F05_Grid_Store",
+            "F06_Grid_Store",
+            "F01_Chart_Store"
+        ]
+    },
+    "configAlternates": {
+        "designer|userClassName": "string",
+        "stores": "typedarray"
+    },
+    "name": "MyController",
+    "designerId": "601d2cc5-6027-4092-9e74-d7ea8ef994a8",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#selBtn",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "selBtnClick",
+                "implHandler": [
+                    "var store_arr = ['F01','F02','F03','F04','F05','F06'];",
+                    "var class_arr = ['NUM','NUM','NUM','NUM','CHAR','CHAR'];",
+                    "",
+                    "var chart_arr = ['F01'];",
+                    "",
+                    "for(var i = 0 ; i < store_arr.length ; i ++){",
+                    "    var store = this.getStore(store_arr[i] + '_Grid_Store');",
+                    "    store.load({",
+                    "        params: {",
+                    "            V_TYPE: store_arr[i],",
+                    "            V_CLASS : class_arr[i],",
+                    "            V_FROM_DT: Ext.getCmp('V_FROM_DT').getValue(),",
+                    "            V_TO_DT: Ext.getCmp('V_TO_DT').getValue(),",
+                    "            V_COMP_ID : parent.Ext.getCmp('GCOMP_ID').getValue(),",
+                    "            V_USR_ID : parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "        },",
+                    "    });",
+                    "}",
+                    "",
+                    "for(var i = 0 ; i < chart_arr.length ; i ++){",
+                    "    var store = this.getStore(store_arr[i] + '_Chart_Store');",
+                    "    store.load({",
+                    "        params: {",
+                    "            V_TYPE: chart_arr[i],",
+                    "            V_CLASS : 'CHART',",
+                    "            V_FROM_DT: Ext.getCmp('V_FROM_DT').getValue(),",
+                    "            V_TO_DT: Ext.getCmp('V_TO_DT').getValue(),",
+                    "            V_COMP_ID : parent.Ext.getCmp('GCOMP_ID').getValue(),",
+                    "            V_USR_ID : parent.Ext.getCmp('GUSER_ID').getValue(),",
+                    "        },",
+                    "    });",
+                    "}",
+                    "",
+                    ""
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "selBtnClick",
+            "designerId": "3ee16489-6cd0-4500-9edd-4b8858b1b87c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#saveBtn",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "saveBtnClick",
+                "implHandler": [
+                    "alert('save');"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "saveBtnClick",
+            "designerId": "ef568c00-bc5d-46fd-811f-337f1f9f1e48"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#delBtn",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "delBtnClick",
+                "implHandler": [
+                    "alert('delete');"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "delBtnClick",
+            "designerId": "7a455471-5788-496d-94ba-413ede283de7"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#clsBtn",
+                "designer|targetType": "Ext.button.Button",
+                "fn": "clsBtnClick",
+                "implHandler": [
+                    "var tab=parent.Ext.getCmp('myTab');",
+                    "var activeTab=tab.getActiveTab();",
+                    "var tabIndex=tab.items.indexOf(activeTab);",
+                    "tab.remove(tabIndex,true);"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "clsBtnClick",
+            "designerId": "edf8712e-254b-4119-b4fa-facfe79d72df"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mysearchform textfield[name=search_field]",
+                "designer|targetType": "Ext.form.field.Text",
+                "fn": "tfEnter",
+                "implHandler": [
+                    "\tif (e.getKey() == e.ENTER) {",
+                    "\t\tthis.selBtnClick();",
+                    "\t}"
+                ],
+                "name": "specialkey",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "designer|controlQuery": "string",
+                "designer|targetType": "view",
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "tfEnter",
+            "designerId": "d3a28083-c87d-4d1f-bcb1-bcbe689a07ff"
+        }
+    ]
+}

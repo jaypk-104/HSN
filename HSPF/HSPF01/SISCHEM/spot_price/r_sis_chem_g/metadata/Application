@@ -1,0 +1,44 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "MyGridController",
+            "TbButtonController"
+        ],
+        "models": [
+            "MyModel"
+        ],
+        "name": "R_SIS_CHEM_G2",
+        "stores": [
+            "MyStore",
+            "G01_Grid_Store",
+            "G02_Grid_Store",
+            "G03_Grid_Store",
+            "G04_Grid_Store",
+            "G05_Grid_Store",
+            "G06_Grid_Store",
+            "G07_Grid_Store",
+            "G08_Grid_Store",
+            "G09_Grid_Store"
+        ],
+        "views": [
+            "MySearchForm",
+            "MyViewport",
+            "TbButton"
+        ]
+    },
+    "configAlternates": {
+        "controllers": "typedarray",
+        "name": "string",
+        "views": "typedarray",
+        "models": "typedarray",
+        "stores": "typedarray"
+    },
+    "name": "Application",
+    "designerId": "application"
+}

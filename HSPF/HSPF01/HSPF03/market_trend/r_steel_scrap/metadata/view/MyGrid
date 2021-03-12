@@ -1,0 +1,290 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyBorder": false,
+        "designer|userAlias": "myGrid",
+        "designer|userClassName": "MyGrid",
+        "header": false,
+        "store": "MyStore",
+        "style": "border: 1px solid #659DDC; padding: 5px;",
+        "tbar": [
+            "[{",
+            "                    id: 'gridAddBtn',",
+            "                    text: '',",
+            "                    margin: '0 3 0 0',",
+            "                    glyph: 'xf055@FontAwesome',",
+            "                    iconCls: 'grid-add-btn'",
+            "                },",
+            "                {",
+            "                    id: 'gridDelBtn',",
+            "                    text: '',",
+            "                    margin: '0 3 0 0',",
+            "                    glyph: 'xf056@FontAwesome',",
+            "                    iconCls: 'grid-del-btn'",
+            "                },",
+            "    {",
+            "        xtype: 'container',",
+            "        flex: 1",
+            "    }, ",
+            "    {",
+            "        xtype: 'button',",
+            "        glyph: 'xf1c3@FontAwesome',",
+            "        id: 'xlsxDown',",
+            "        cfg: {",
+            "        type: 'excel07',",
+            "        ext: 'xlsx'",
+            "        },",
+            "        iconCls: 'grid-excel-btn',",
+            "",
+            "    }]"
+        ]
+    },
+    "configAlternates": {
+        "tbar": "object",
+        "bodyBorder": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "header": "boolean",
+        "style": "string",
+        "id": "string",
+        "store": "store"
+    },
+    "name": "MyGridPanel",
+    "designerId": "9d63e3d5-fca0-43f3-9444-20a52a873afb",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "tbar",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "243a77bb-2b1a-4889-b3f4-d9053f2af395",
+    "viewModelInstanceId": "0bb1cdb7-e058-40bd-987e-722d28c28487",
+    "cn": [
+        {
+            "type": "Ext.view.Table",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyTable",
+            "designerId": "8e41ea37-8853-489b-99d6-f975fc75fc80",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "format",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.RowNumberer",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "width": 40
+            },
+            "configAlternates": {
+                "width": "number"
+            },
+            "name": "MyRowNumberer",
+            "designerId": "50515a3f-f480-4462-aa7e-28b9bc76b94c"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "hidden": true,
+                "text": "V_TYPE"
+            },
+            "configAlternates": {
+                "hidden": "boolean",
+                "text": "string"
+            },
+            "name": "MyColumn4",
+            "designerId": "416d5d48-a74a-4004-99a7-791c0e9f3013"
+        },
+        {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "PDATE",
+                "enableTextSelection": true,
+                "exportStyle": [
+                    "{",
+                    "    format: 'Short Date'",
+                    "}"
+                ],
+                "format": "Y-m-d",
+                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                "text": "날짜",
+                "width": 100
+            },
+            "configAlternates": {
+                "align": "string",
+                "dataIndex": "datafield",
+                "enableTextSelection": "boolean",
+                "exportStyle": "object",
+                "format": "string",
+                "style": "string",
+                "text": "string",
+                "maxWidth": "number",
+                "minWidth": "number",
+                "width": "auto"
+            },
+            "name": "MyDateColumn",
+            "designerId": "4c77d306-ebdf-43a2-806d-ce62e624b1a5"
+        },
+        {
+            "type": "Ext.grid.column.Number",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "end",
+                "dataIndex": "VALUE2",
+                "enableTextSelection": true,
+                "exportStyle": [
+                    "{",
+                    "                        alignment: {",
+                    "                            horizontal: 'Right'",
+                    "                        }",
+                    "                    }"
+                ],
+                "format": "0,000",
+                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                "text": "가격",
+                "width": 100
+            },
+            "configAlternates": {
+                "align": "string",
+                "dataIndex": "datafield",
+                "enableTextSelection": "boolean",
+                "exportStyle": "object",
+                "format": "string",
+                "id": "string",
+                "style": "string",
+                "text": "string",
+                "maxWidth": "number",
+                "minWidth": "number",
+                "width": "auto"
+            },
+            "name": "MyNumberColumn",
+            "designerId": "61b1c814-5fdf-43b5-b12c-f2e4a8987df1"
+        },
+        {
+            "type": "Ext.selection.CheckboxModel",
+            "reference": {
+                "name": "selModel",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "checkOnly": true
+            },
+            "configAlternates": {
+                "tbar": "object",
+                "checkOnly": "boolean"
+            },
+            "name": "MyCheckboxSelectionModel",
+            "designerId": "36a82877-e549-48a3-9e6f-b88c84f9f3fe",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "tbar",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onCheckboxModelSelect",
+                        "implHandler": [
+                            "record.set('V_TYPE', 'V');"
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onCheckboxModelSelect",
+                    "designerId": "71828819-bf71-478b-bc33-ccbcdfe862a4"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onCheckboxModelDeselect",
+                        "implHandler": [
+                            "record.set('V_TYPE', '');"
+                        ],
+                        "name": "deselect",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onCheckboxModelDeselect",
+                    "designerId": "eba74125-f44d-48da-b6f8-44b0cb3b449b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.plugin.Exporter",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyGridExporterPlugin",
+            "designerId": "56d89fd4-7b15-4591-a240-551178b9a017"
+        },
+        {
+            "type": "Ext.grid.plugin.CellEditing",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyCellEditingPlugin",
+            "designerId": "bd6a3130-6c9d-4f01-85b1-e0b9772da340"
+        }
+    ]
+}

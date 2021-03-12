@@ -1,0 +1,19 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "MyController"
+        ],
+        "name": "COVID_SELF_CHECK",
+        "views": [
+            "MyContainer"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application"
+}

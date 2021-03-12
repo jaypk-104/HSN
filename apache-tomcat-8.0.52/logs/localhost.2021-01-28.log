@@ -1,0 +1,52 @@
+28-Jan-2021 18:14:13.529 심각 [http-nio-80-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /HSPF01/common/login/sql/loginproc.jsp at line 29
+
+26: 	  Cipher cipher = Cipher.getInstance("RSA");
+27: 	  byte[] encryptedBytes = hexToByteArray(securedValue);
+28: 	  cipher.init(Cipher.DECRYPT_MODE, privateKey);
+29: 	  byte[] decryptedBytes = cipher.doFinal(encryptedBytes);
+30: 	  String decryptedValue = new String(decryptedBytes, "utf-8"); // 문자 인코딩 주의.
+31: 	  return decryptedValue;
+32: 	  }
+
+
+Stacktrace:] with root cause
+ javax.crypto.BadPaddingException: Decryption error
+	at sun.security.rsa.RSAPadding.unpadV15(RSAPadding.java:380)
+	at sun.security.rsa.RSAPadding.unpad(RSAPadding.java:291)
+	at com.sun.crypto.provider.RSACipher.doFinal(RSACipher.java:363)
+	at com.sun.crypto.provider.RSACipher.engineDoFinal(RSACipher.java:389)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2165)
+	at org.apache.jsp.HSPF01.common.login.sql.loginproc_jsp.decryptRsa(loginproc_jsp.java:47)
+	at org.apache.jsp.HSPF01.common.login.sql.loginproc_jsp._jspService(loginproc_jsp.java:252)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+

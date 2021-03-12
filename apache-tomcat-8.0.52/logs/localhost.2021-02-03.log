@@ -1,0 +1,485 @@
+03-Feb-2021 09:34:27.379 심각 [http-nio-80-exec-17] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /HSPF01/common/login/sql/loginproc.jsp at line 28
+
+25: 	//  System.out.println("will decrypt : " + securedValue);
+26: 	  Cipher cipher = Cipher.getInstance("RSA");
+27: 	  byte[] encryptedBytes = hexToByteArray(securedValue);
+28: 	  cipher.init(Cipher.DECRYPT_MODE, privateKey);
+29: 	  byte[] decryptedBytes = cipher.doFinal(encryptedBytes);
+30: 	  String decryptedValue = new String(decryptedBytes, "utf-8"); // 문자 인코딩 주의.
+31: 	  return decryptedValue;
+
+
+Stacktrace:] with root cause
+ java.security.InvalidKeyException: No installed provider supports this key: (null)
+	at javax.crypto.Cipher.chooseProvider(Cipher.java:893)
+	at javax.crypto.Cipher.init(Cipher.java:1249)
+	at javax.crypto.Cipher.init(Cipher.java:1186)
+	at org.apache.jsp.HSPF01.common.login.sql.loginproc_jsp.decryptRsa(loginproc_jsp.java:46)
+	at org.apache.jsp.HSPF01.common.login.sql.loginproc_jsp._jspService(loginproc_jsp.java:252)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+03-Feb-2021 12:22:34.238 심각 [http-nio-80-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 446 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+443: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+444: 				cs.setString(2, "D");//V_TYPE
+445: 				cs.setString(3, "");//V_DEPT_CD
+446: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+447: 				cs.setString(5, V_USR_ID);//V_USR_ID
+448: 				cs.executeQuery();
+449: 				
+
+
+An error occurred at line: 454 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+451: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+452: 				cs.setString(2, V_TYPE);//V_TYPE
+453: 				cs.setString(3, "TS");//V_DEPT_CD
+454: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+455: 				cs.setString(5, V_USR_ID);//V_USR_ID
+456: 				cs.executeQuery();
+457: 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 446 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+443: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+444: 				cs.setString(2, "D");//V_TYPE
+445: 				cs.setString(3, "");//V_DEPT_CD
+446: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+447: 				cs.setString(5, V_USR_ID);//V_USR_ID
+448: 				cs.executeQuery();
+449: 				
+
+
+An error occurred at line: 454 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+451: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+452: 				cs.setString(2, V_TYPE);//V_TYPE
+453: 				cs.setString(3, "TS");//V_DEPT_CD
+454: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+455: 				cs.setString(5, V_USR_ID);//V_USR_ID
+456: 				cs.executeQuery();
+457: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+03-Feb-2021 12:24:28.140 심각 [http-nio-80-exec-16] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 446 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+443: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+444: 				cs.setString(2, "D");//V_TYPE
+445: 				cs.setString(3, "");//V_DEPT_CD
+446: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+447: 				cs.setString(5, V_USR_ID);//V_USR_ID
+448: 				cs.executeQuery();
+449: 				
+
+
+An error occurred at line: 454 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+451: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+452: 				cs.setString(2, V_TYPE);//V_TYPE
+453: 				cs.setString(3, "TS");//V_DEPT_CD
+454: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+455: 				cs.setString(5, V_USR_ID);//V_USR_ID
+456: 				cs.executeQuery();
+457: 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 446 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+443: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+444: 				cs.setString(2, "D");//V_TYPE
+445: 				cs.setString(3, "");//V_DEPT_CD
+446: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+447: 				cs.setString(5, V_USR_ID);//V_USR_ID
+448: 				cs.executeQuery();
+449: 				
+
+
+An error occurred at line: 454 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+451: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+452: 				cs.setString(2, V_TYPE);//V_TYPE
+453: 				cs.setString(3, "TS");//V_DEPT_CD
+454: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+455: 				cs.setString(5, V_USR_ID);//V_USR_ID
+456: 				cs.executeQuery();
+457: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+03-Feb-2021 12:24:32.225 심각 [http-nio-80-exec-17] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 446 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+443: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+444: 				cs.setString(2, "D");//V_TYPE
+445: 				cs.setString(3, "");//V_DEPT_CD
+446: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+447: 				cs.setString(5, V_USR_ID);//V_USR_ID
+448: 				cs.executeQuery();
+449: 				
+
+
+An error occurred at line: 454 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+451: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+452: 				cs.setString(2, V_TYPE);//V_TYPE
+453: 				cs.setString(3, "TS");//V_DEPT_CD
+454: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+455: 				cs.setString(5, V_USR_ID);//V_USR_ID
+456: 				cs.executeQuery();
+457: 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 446 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+443: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+444: 				cs.setString(2, "D");//V_TYPE
+445: 				cs.setString(3, "");//V_DEPT_CD
+446: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+447: 				cs.setString(5, V_USR_ID);//V_USR_ID
+448: 				cs.executeQuery();
+449: 				
+
+
+An error occurred at line: 454 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+451: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+452: 				cs.setString(2, V_TYPE);//V_TYPE
+453: 				cs.setString(3, "TS");//V_DEPT_CD
+454: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+455: 				cs.setString(5, V_USR_ID);//V_USR_ID
+456: 				cs.executeQuery();
+457: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+03-Feb-2021 12:25:06.425 심각 [http-nio-80-exec-20] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 446 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+443: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+444: 				cs.setString(2, "D");//V_TYPE
+445: 				cs.setString(3, "");//V_DEPT_CD
+446: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+447: 				cs.setString(5, V_USR_ID);//V_USR_ID
+448: 				cs.executeQuery();
+449: 				
+
+
+An error occurred at line: 454 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+451: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+452: 				cs.setString(2, V_TYPE);//V_TYPE
+453: 				cs.setString(3, "TS");//V_DEPT_CD
+454: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+455: 				cs.setString(5, V_USR_ID);//V_USR_ID
+456: 				cs.executeQuery();
+457: 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 446 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+443: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+444: 				cs.setString(2, "D");//V_TYPE
+445: 				cs.setString(3, "");//V_DEPT_CD
+446: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+447: 				cs.setString(5, V_USR_ID);//V_USR_ID
+448: 				cs.executeQuery();
+449: 				
+
+
+An error occurred at line: 454 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+451: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+452: 				cs.setString(2, V_TYPE);//V_TYPE
+453: 				cs.setString(3, "TS");//V_DEPT_CD
+454: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+455: 				cs.setString(5, V_USR_ID);//V_USR_ID
+456: 				cs.executeQuery();
+457: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+03-Feb-2021 15:23:04.959 심각 [http-nio-80-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 446 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+443: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+444: 				cs.setString(2, "D");//V_TYPE
+445: 				cs.setString(3, "");//V_DEPT_CD
+446: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+447: 				cs.setString(5, V_USR_ID);//V_USR_ID
+448: 				cs.executeQuery();
+449: 				
+
+
+An error occurred at line: 454 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+451: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+452: 				cs.setString(2, V_TYPE);//V_TYPE
+453: 				cs.setString(3, "TS");//V_DEPT_CD
+454: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+455: 				cs.setString(5, V_USR_ID);//V_USR_ID
+456: 				cs.executeQuery();
+457: 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 446 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+443: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+444: 				cs.setString(2, "D");//V_TYPE
+445: 				cs.setString(3, "");//V_DEPT_CD
+446: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+447: 				cs.setString(5, V_USR_ID);//V_USR_ID
+448: 				cs.executeQuery();
+449: 				
+
+
+An error occurred at line: 454 in the jsp file: /HSPF01/TOT/ex/s_bl_mst_tot_hspf/sql/S_BL_MST_TOT_HSPF.jsp
+V_BILL_NO cannot be resolved to a variable
+451: 				cs.setString(1, V_COMP_ID);//V_COMP_ID
+452: 				cs.setString(2, V_TYPE);//V_TYPE
+453: 				cs.setString(3, "TS");//V_DEPT_CD
+454: 				cs.setString(4, V_BILL_NO);//V_REF_NO
+455: 				cs.setString(5, V_USR_ID);//V_USR_ID
+456: 				cs.executeQuery();
+457: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+

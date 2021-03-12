@@ -1,0 +1,42 @@
+28-Feb-2021 15:00:23.955 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.52
+28-Feb-2021 15:00:23.996 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 28 2018 16:24:29 UTC
+28-Feb-2021 15:00:23.996 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.52.0
+28-Feb-2021 15:00:23.996 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+28-Feb-2021 15:00:23.996 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.10.0-862.el7.x86_64
+28-Feb-2021 15:00:23.996 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+28-Feb-2021 15:00:23.997 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre
+28-Feb-2021 15:00:23.997 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_161-b14
+28-Feb-2021 15:00:23.997 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+28-Feb-2021 15:00:23.997 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /data/apache-tomcat-8.0.52
+28-Feb-2021 15:00:23.997 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /data/apache-tomcat-8.0.52
+28-Feb-2021 15:00:23.998 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/data/apache-tomcat-8.0.52/conf/logging.properties
+28-Feb-2021 15:00:23.998 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+28-Feb-2021 15:00:23.998 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+28-Feb-2021 15:00:23.999 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+28-Feb-2021 15:00:23.999 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+28-Feb-2021 15:00:23.999 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/data/apache-tomcat-8.0.52
+28-Feb-2021 15:00:24.000 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/data/apache-tomcat-8.0.52
+28-Feb-2021 15:00:24.000 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/data/apache-tomcat-8.0.52/temp
+28-Feb-2021 15:00:24.000 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+28-Feb-2021 15:00:24.116 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+28-Feb-2021 15:00:24.125 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Feb-2021 15:00:24.127 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+28-Feb-2021 15:00:24.128 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Feb-2021 15:00:24.128 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+28-Feb-2021 15:00:24.129 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+28-Feb-2021 15:00:24.129 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 619 ms
+28-Feb-2021 15:00:24.148 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+28-Feb-2021 15:00:24.149 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.52
+28-Feb-2021 15:00:24.162 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /data/apache-tomcat-8.0.52/webapps/docs
+28-Feb-2021 15:00:25.611 정보 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Feb-2021 15:00:25.645 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /data/apache-tomcat-8.0.52/webapps/docs has finished in 1,483 ms
+28-Feb-2021 15:00:25.645 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /data/apache-tomcat-8.0.52/webapps/examples
+28-Feb-2021 15:00:26.654 정보 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Feb-2021 15:00:26.677 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /data/apache-tomcat-8.0.52/webapps/examples has finished in 1,032 ms
+28-Feb-2021 15:00:26.677 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /data/apache-tomcat-8.0.52/webapps/ROOT
+28-Feb-2021 15:00:27.461 정보 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Feb-2021 15:00:27.473 정보 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /data/apache-tomcat-8.0.52/webapps/ROOT has finished in 796 ms
+28-Feb-2021 15:00:27.495 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Feb-2021 15:00:27.505 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+28-Feb-2021 15:00:27.507 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+28-Feb-2021 15:00:27.510 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 3380 ms

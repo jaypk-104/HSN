@@ -1,0 +1,289 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyBorder": false,
+        "designer|userAlias": "mygrid7",
+        "designer|userClassName": "MyGrid7",
+        "flex": 1,
+        "header": false,
+        "store": "G07_Grid_Store",
+        "style": "border: 1px solid #659DDC; padding: 5px;",
+        "tbar": [
+            "[",
+            "    {",
+            "        xtype: 'container',",
+            "        flex: 1",
+            "    }, ",
+            "    {",
+            "        xtype: 'button',",
+            "        glyph: 'xf1c3@FontAwesome',",
+            "        id: 'E07_xlsxDown',",
+            "        cfg: {",
+            "        type: 'excel07',",
+            "        ext: 'xlsx'",
+            "        },",
+            "        cls:'execl_btn',",
+            "        iconCls: 'grid-excel-btn',",
+            "",
+            "    }]"
+        ]
+    },
+    "configAlternates": {
+        "tbar": "object",
+        "bodyBorder": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "header": "boolean",
+        "style": "string",
+        "id": "string",
+        "store": "store",
+        "height": "auto",
+        "flex": "number",
+        "layout|flex": "number"
+    },
+    "name": "MyGrid7",
+    "designerId": "9dc3a1bc-2fd7-4254-9d4d-e17756974656",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "tbar",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "5af691aa-58a3-44fd-96a6-78000b9e696b",
+    "viewModelInstanceId": "8719b755-6fdd-462b-9135-2cc926bf434f",
+    "cn": [
+        {
+            "type": "Ext.view.Table",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "enableTextSelection": true
+            },
+            "configAlternates": {
+                "enableTextSelection": "boolean"
+            },
+            "name": "MyTable",
+            "designerId": "cbee0ac4-5bc8-4810-9c6e-f4221d5be645",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "format",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.RowNumberer",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "width": 40
+            },
+            "configAlternates": {
+                "width": "number"
+            },
+            "name": "MyRowNumberer",
+            "designerId": "18177f57-609b-4052-89a5-1a6441dde75c"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "hidden": true,
+                "text": "V_TYPE"
+            },
+            "configAlternates": {
+                "hidden": "boolean",
+                "text": "string"
+            },
+            "name": "MyColumn4",
+            "designerId": "3714db75-5e0a-45cd-b958-219a2759f0aa"
+        },
+        {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "PDATE",
+                "enableTextSelection": true,
+                "exportStyle": [
+                    "{",
+                    "    format: 'Short Date'",
+                    "}"
+                ],
+                "format": "Y-m-d",
+                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                "text": "날짜",
+                "width": 100
+            },
+            "configAlternates": {
+                "align": "string",
+                "dataIndex": "datafield",
+                "enableTextSelection": "boolean",
+                "exportStyle": "object",
+                "format": "string",
+                "style": "string",
+                "text": "string",
+                "maxWidth": "number",
+                "minWidth": "number",
+                "width": "auto"
+            },
+            "name": "MyDateColumn",
+            "designerId": "ca6765b5-608a-48c1-a90c-e21d459bb1eb"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "REGION",
+                "enableTextSelection": true,
+                "exportStyle": [
+                    "{",
+                    "                        alignment: {",
+                    "                            horizontal: 'Right'",
+                    "                        }",
+                    "                    }"
+                ],
+                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                "text": "지역",
+                "width": 100
+            },
+            "configAlternates": {
+                "align": "string",
+                "dataIndex": "datafield",
+                "enableTextSelection": "boolean",
+                "exportStyle": "object",
+                "format": "string",
+                "id": "string",
+                "style": "string",
+                "text": "string",
+                "maxWidth": "number",
+                "minWidth": "number",
+                "width": "auto"
+            },
+            "name": "MyColumn",
+            "designerId": "154bda67-a5a2-4d40-b4db-6f171045db20"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "PRICE",
+                "enableTextSelection": true,
+                "exportStyle": [
+                    "{",
+                    "                        alignment: {",
+                    "                            horizontal: 'Right'",
+                    "                        }",
+                    "                    }"
+                ],
+                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                "text": "가격",
+                "width": 370
+            },
+            "configAlternates": {
+                "align": "string",
+                "dataIndex": "datafield",
+                "enableTextSelection": "boolean",
+                "exportStyle": "object",
+                "format": "string",
+                "id": "string",
+                "style": "string",
+                "text": "string",
+                "maxWidth": "number",
+                "minWidth": "number",
+                "width": "auto"
+            },
+            "name": "MyColumn1",
+            "designerId": "d9178cf3-e307-4d7f-9a52-66438f207889"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "REMARK",
+                "enableTextSelection": true,
+                "exportStyle": [
+                    "{",
+                    "                        alignment: {",
+                    "                            horizontal: 'Right'",
+                    "                        }",
+                    "                    }"
+                ],
+                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                "text": "비고",
+                "width": 760
+            },
+            "configAlternates": {
+                "align": "string",
+                "dataIndex": "datafield",
+                "enableTextSelection": "boolean",
+                "exportStyle": "object",
+                "format": "string",
+                "id": "string",
+                "style": "string",
+                "text": "string",
+                "maxWidth": "number",
+                "minWidth": "number",
+                "width": "auto"
+            },
+            "name": "MyColumn9",
+            "designerId": "97e49829-0fbc-459f-9fb3-2297656852bc"
+        },
+        {
+            "type": "Ext.grid.plugin.Exporter",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyGridExporterPlugin",
+            "designerId": "318c8bc3-72a0-4831-aa0b-9bfda0997124"
+        },
+        {
+            "type": "Ext.grid.plugin.CellEditing",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyCellEditingPlugin",
+            "designerId": "07bd015b-86e3-45c6-9a04-6454d3ca1dd5"
+        }
+    ]
+}

@@ -1,0 +1,393 @@
+27-Aug-2020 14:56:18.079 심각 [http-nio-80-exec-23] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 140 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+137: 					V_ITEM_CD = hashMap.get("ITEM_CD") == null ? "" : hashMap.get("ITEM_CD").toString().toUpperCase();
+138: 					V_ITEM_NM = hashMap.get("ITEM_NM") == null ? "" : hashMap.get("ITEM_NM").toString().toUpperCase();
+139: 					V_ITEM_CALC_YN = hashMap.get("ITEM_CALC_YN") == null ? "" : hashMap.get("ITEM_CALC_YN").toString().toUpperCase();
+140: 					V_SEND_MAIL_YN = hashMap.get("SEND_MAIL_YN") == null ? "" : hashMap.get("SEND_MAIL_YN").toString().toUpperCase();
+141: 					V_SPEC = hashMap.get("SPEC") == null ? "" : hashMap.get("SPEC").toString().toUpperCase();
+142: 					
+143: 					String V_ITEM_GROUP_CD = hashMap.get("ITEM_GROUP_CD") == null ? "" : hashMap.get("ITEM_GROUP_CD").toString().toUpperCase();
+
+
+An error occurred at line: 226 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+223: 					cs.setString(28, USE_YN);//USE_YN
+224: 					cs.setString(29, V_SF_DAY);//V_SF_DAY
+225: 					cs.setString(30, V_ORIGIN);//V_ORIGIN
+226: 					cs.setString(31, V_SEND_MAIL_YN);//V_SEND_MAIL_YN
+227: 					cs.executeQuery();
+228: 					
+229: 					// ERP 입력
+
+
+An error occurred at line: 276 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+273: 				V_ITEM_CD = jsondata.get("ITEM_CD") == null ? "" : jsondata.get("ITEM_CD").toString().toUpperCase();
+274: 				V_ITEM_NM = jsondata.get("ITEM_NM") == null ? "" : jsondata.get("ITEM_NM").toString().toUpperCase();
+275: 				V_ITEM_CALC_YN = jsondata.get("ITEM_CALC_YN") == null ? "" : jsondata.get("ITEM_CALC_YN").toString().toUpperCase();
+276: 				V_SEND_MAIL_YN = jsondata.get("SEND_MAIL_YN") == null ? "" : jsondata.get("SEND_MAIL_YN").toString().toUpperCase();
+277: 				V_SPEC = jsondata.get("SPEC") == null ? "" : jsondata.get("SPEC").toString().toUpperCase();
+278: 
+279: 				String V_ITEM_GROUP_CD = jsondata.get("ITEM_GROUP_CD") == null ? "" : jsondata.get("ITEM_GROUP_CD").toString().toUpperCase();
+
+
+An error occurred at line: 362 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+359: 				cs.setString(28, USE_YN);//V_M_B_RT
+360: 				cs.setString(29, V_SF_DAY);//V_SF_DAY
+361: 				cs.setString(30, V_ORIGIN);//V_ORIGIN
+362: 				cs.setString(31, V_SEND_MAIL_YN);//V_SEND_MAIL_YN
+363: 				cs.executeQuery();
+364: 				
+365: 				// ERP 입력
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 140 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+137: 					V_ITEM_CD = hashMap.get("ITEM_CD") == null ? "" : hashMap.get("ITEM_CD").toString().toUpperCase();
+138: 					V_ITEM_NM = hashMap.get("ITEM_NM") == null ? "" : hashMap.get("ITEM_NM").toString().toUpperCase();
+139: 					V_ITEM_CALC_YN = hashMap.get("ITEM_CALC_YN") == null ? "" : hashMap.get("ITEM_CALC_YN").toString().toUpperCase();
+140: 					V_SEND_MAIL_YN = hashMap.get("SEND_MAIL_YN") == null ? "" : hashMap.get("SEND_MAIL_YN").toString().toUpperCase();
+141: 					V_SPEC = hashMap.get("SPEC") == null ? "" : hashMap.get("SPEC").toString().toUpperCase();
+142: 					
+143: 					String V_ITEM_GROUP_CD = hashMap.get("ITEM_GROUP_CD") == null ? "" : hashMap.get("ITEM_GROUP_CD").toString().toUpperCase();
+
+
+An error occurred at line: 226 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+223: 					cs.setString(28, USE_YN);//USE_YN
+224: 					cs.setString(29, V_SF_DAY);//V_SF_DAY
+225: 					cs.setString(30, V_ORIGIN);//V_ORIGIN
+226: 					cs.setString(31, V_SEND_MAIL_YN);//V_SEND_MAIL_YN
+227: 					cs.executeQuery();
+228: 					
+229: 					// ERP 입력
+
+
+An error occurred at line: 276 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+273: 				V_ITEM_CD = jsondata.get("ITEM_CD") == null ? "" : jsondata.get("ITEM_CD").toString().toUpperCase();
+274: 				V_ITEM_NM = jsondata.get("ITEM_NM") == null ? "" : jsondata.get("ITEM_NM").toString().toUpperCase();
+275: 				V_ITEM_CALC_YN = jsondata.get("ITEM_CALC_YN") == null ? "" : jsondata.get("ITEM_CALC_YN").toString().toUpperCase();
+276: 				V_SEND_MAIL_YN = jsondata.get("SEND_MAIL_YN") == null ? "" : jsondata.get("SEND_MAIL_YN").toString().toUpperCase();
+277: 				V_SPEC = jsondata.get("SPEC") == null ? "" : jsondata.get("SPEC").toString().toUpperCase();
+278: 
+279: 				String V_ITEM_GROUP_CD = jsondata.get("ITEM_GROUP_CD") == null ? "" : jsondata.get("ITEM_GROUP_CD").toString().toUpperCase();
+
+
+An error occurred at line: 362 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+359: 				cs.setString(28, USE_YN);//V_M_B_RT
+360: 				cs.setString(29, V_SF_DAY);//V_SF_DAY
+361: 				cs.setString(30, V_ORIGIN);//V_ORIGIN
+362: 				cs.setString(31, V_SEND_MAIL_YN);//V_SEND_MAIL_YN
+363: 				cs.executeQuery();
+364: 				
+365: 				// ERP 입력
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Aug-2020 14:58:26.230 심각 [http-nio-80-exec-23] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 140 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+137: 					V_ITEM_CD = hashMap.get("ITEM_CD") == null ? "" : hashMap.get("ITEM_CD").toString().toUpperCase();
+138: 					V_ITEM_NM = hashMap.get("ITEM_NM") == null ? "" : hashMap.get("ITEM_NM").toString().toUpperCase();
+139: 					V_ITEM_CALC_YN = hashMap.get("ITEM_CALC_YN") == null ? "" : hashMap.get("ITEM_CALC_YN").toString().toUpperCase();
+140: 					V_SEND_MAIL_YN = hashMap.get("SEND_MAIL_YN") == null ? "" : hashMap.get("SEND_MAIL_YN").toString().toUpperCase();
+141: 					V_SPEC = hashMap.get("SPEC") == null ? "" : hashMap.get("SPEC").toString().toUpperCase();
+142: 					
+143: 					String V_ITEM_GROUP_CD = hashMap.get("ITEM_GROUP_CD") == null ? "" : hashMap.get("ITEM_GROUP_CD").toString().toUpperCase();
+
+
+An error occurred at line: 226 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+223: 					cs.setString(28, USE_YN);//USE_YN
+224: 					cs.setString(29, V_SF_DAY);//V_SF_DAY
+225: 					cs.setString(30, V_ORIGIN);//V_ORIGIN
+226: 					cs.setString(31, V_SEND_MAIL_YN);//V_SEND_MAIL_YN
+227: 					cs.executeQuery();
+228: 					
+229: 					// ERP 입력
+
+
+An error occurred at line: 276 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+273: 				V_ITEM_CD = jsondata.get("ITEM_CD") == null ? "" : jsondata.get("ITEM_CD").toString().toUpperCase();
+274: 				V_ITEM_NM = jsondata.get("ITEM_NM") == null ? "" : jsondata.get("ITEM_NM").toString().toUpperCase();
+275: 				V_ITEM_CALC_YN = jsondata.get("ITEM_CALC_YN") == null ? "" : jsondata.get("ITEM_CALC_YN").toString().toUpperCase();
+276: 				V_SEND_MAIL_YN = jsondata.get("SEND_MAIL_YN") == null ? "" : jsondata.get("SEND_MAIL_YN").toString().toUpperCase();
+277: 				V_SPEC = jsondata.get("SPEC") == null ? "" : jsondata.get("SPEC").toString().toUpperCase();
+278: 
+279: 				String V_ITEM_GROUP_CD = jsondata.get("ITEM_GROUP_CD") == null ? "" : jsondata.get("ITEM_GROUP_CD").toString().toUpperCase();
+
+
+An error occurred at line: 362 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+359: 				cs.setString(28, USE_YN);//V_M_B_RT
+360: 				cs.setString(29, V_SF_DAY);//V_SF_DAY
+361: 				cs.setString(30, V_ORIGIN);//V_ORIGIN
+362: 				cs.setString(31, V_SEND_MAIL_YN);//V_SEND_MAIL_YN
+363: 				cs.executeQuery();
+364: 				
+365: 				// ERP 입력
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 140 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+137: 					V_ITEM_CD = hashMap.get("ITEM_CD") == null ? "" : hashMap.get("ITEM_CD").toString().toUpperCase();
+138: 					V_ITEM_NM = hashMap.get("ITEM_NM") == null ? "" : hashMap.get("ITEM_NM").toString().toUpperCase();
+139: 					V_ITEM_CALC_YN = hashMap.get("ITEM_CALC_YN") == null ? "" : hashMap.get("ITEM_CALC_YN").toString().toUpperCase();
+140: 					V_SEND_MAIL_YN = hashMap.get("SEND_MAIL_YN") == null ? "" : hashMap.get("SEND_MAIL_YN").toString().toUpperCase();
+141: 					V_SPEC = hashMap.get("SPEC") == null ? "" : hashMap.get("SPEC").toString().toUpperCase();
+142: 					
+143: 					String V_ITEM_GROUP_CD = hashMap.get("ITEM_GROUP_CD") == null ? "" : hashMap.get("ITEM_GROUP_CD").toString().toUpperCase();
+
+
+An error occurred at line: 226 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+223: 					cs.setString(28, USE_YN);//USE_YN
+224: 					cs.setString(29, V_SF_DAY);//V_SF_DAY
+225: 					cs.setString(30, V_ORIGIN);//V_ORIGIN
+226: 					cs.setString(31, V_SEND_MAIL_YN);//V_SEND_MAIL_YN
+227: 					cs.executeQuery();
+228: 					
+229: 					// ERP 입력
+
+
+An error occurred at line: 276 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+273: 				V_ITEM_CD = jsondata.get("ITEM_CD") == null ? "" : jsondata.get("ITEM_CD").toString().toUpperCase();
+274: 				V_ITEM_NM = jsondata.get("ITEM_NM") == null ? "" : jsondata.get("ITEM_NM").toString().toUpperCase();
+275: 				V_ITEM_CALC_YN = jsondata.get("ITEM_CALC_YN") == null ? "" : jsondata.get("ITEM_CALC_YN").toString().toUpperCase();
+276: 				V_SEND_MAIL_YN = jsondata.get("SEND_MAIL_YN") == null ? "" : jsondata.get("SEND_MAIL_YN").toString().toUpperCase();
+277: 				V_SPEC = jsondata.get("SPEC") == null ? "" : jsondata.get("SPEC").toString().toUpperCase();
+278: 
+279: 				String V_ITEM_GROUP_CD = jsondata.get("ITEM_GROUP_CD") == null ? "" : jsondata.get("ITEM_GROUP_CD").toString().toUpperCase();
+
+
+An error occurred at line: 362 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+359: 				cs.setString(28, USE_YN);//V_M_B_RT
+360: 				cs.setString(29, V_SF_DAY);//V_SF_DAY
+361: 				cs.setString(30, V_ORIGIN);//V_ORIGIN
+362: 				cs.setString(31, V_SEND_MAIL_YN);//V_SEND_MAIL_YN
+363: 				cs.executeQuery();
+364: 				
+365: 				// ERP 입력
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+27-Aug-2020 15:00:38.010 심각 [http-nio-80-exec-23] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 140 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+137: 					V_ITEM_CD = hashMap.get("ITEM_CD") == null ? "" : hashMap.get("ITEM_CD").toString().toUpperCase();
+138: 					V_ITEM_NM = hashMap.get("ITEM_NM") == null ? "" : hashMap.get("ITEM_NM").toString().toUpperCase();
+139: 					V_ITEM_CALC_YN = hashMap.get("ITEM_CALC_YN") == null ? "" : hashMap.get("ITEM_CALC_YN").toString().toUpperCase();
+140: 					V_SEND_MAIL_YN = hashMap.get("SEND_MAIL_YN") == null ? "" : hashMap.get("SEND_MAIL_YN").toString().toUpperCase();
+141: 					V_SPEC = hashMap.get("SPEC") == null ? "" : hashMap.get("SPEC").toString().toUpperCase();
+142: 					
+143: 					String V_ITEM_GROUP_CD = hashMap.get("ITEM_GROUP_CD") == null ? "" : hashMap.get("ITEM_GROUP_CD").toString().toUpperCase();
+
+
+An error occurred at line: 226 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+223: 					cs.setString(28, USE_YN);//USE_YN
+224: 					cs.setString(29, V_SF_DAY);//V_SF_DAY
+225: 					cs.setString(30, V_ORIGIN);//V_ORIGIN
+226: 					cs.setString(31, V_SEND_MAIL_YN);//V_SEND_MAIL_YN
+227: 					cs.executeQuery();
+228: 					
+229: 					// ERP 입력
+
+
+An error occurred at line: 276 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+273: 				V_ITEM_CD = jsondata.get("ITEM_CD") == null ? "" : jsondata.get("ITEM_CD").toString().toUpperCase();
+274: 				V_ITEM_NM = jsondata.get("ITEM_NM") == null ? "" : jsondata.get("ITEM_NM").toString().toUpperCase();
+275: 				V_ITEM_CALC_YN = jsondata.get("ITEM_CALC_YN") == null ? "" : jsondata.get("ITEM_CALC_YN").toString().toUpperCase();
+276: 				V_SEND_MAIL_YN = jsondata.get("SEND_MAIL_YN") == null ? "" : jsondata.get("SEND_MAIL_YN").toString().toUpperCase();
+277: 				V_SPEC = jsondata.get("SPEC") == null ? "" : jsondata.get("SPEC").toString().toUpperCase();
+278: 
+279: 				String V_ITEM_GROUP_CD = jsondata.get("ITEM_GROUP_CD") == null ? "" : jsondata.get("ITEM_GROUP_CD").toString().toUpperCase();
+
+
+An error occurred at line: 362 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+359: 				cs.setString(28, USE_YN);//V_M_B_RT
+360: 				cs.setString(29, V_SF_DAY);//V_SF_DAY
+361: 				cs.setString(30, V_ORIGIN);//V_ORIGIN
+362: 				cs.setString(31, V_SEND_MAIL_YN);//V_SEND_MAIL_YN
+363: 				cs.executeQuery();
+364: 				
+365: 				// ERP 입력
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 140 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+137: 					V_ITEM_CD = hashMap.get("ITEM_CD") == null ? "" : hashMap.get("ITEM_CD").toString().toUpperCase();
+138: 					V_ITEM_NM = hashMap.get("ITEM_NM") == null ? "" : hashMap.get("ITEM_NM").toString().toUpperCase();
+139: 					V_ITEM_CALC_YN = hashMap.get("ITEM_CALC_YN") == null ? "" : hashMap.get("ITEM_CALC_YN").toString().toUpperCase();
+140: 					V_SEND_MAIL_YN = hashMap.get("SEND_MAIL_YN") == null ? "" : hashMap.get("SEND_MAIL_YN").toString().toUpperCase();
+141: 					V_SPEC = hashMap.get("SPEC") == null ? "" : hashMap.get("SPEC").toString().toUpperCase();
+142: 					
+143: 					String V_ITEM_GROUP_CD = hashMap.get("ITEM_GROUP_CD") == null ? "" : hashMap.get("ITEM_GROUP_CD").toString().toUpperCase();
+
+
+An error occurred at line: 226 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+223: 					cs.setString(28, USE_YN);//USE_YN
+224: 					cs.setString(29, V_SF_DAY);//V_SF_DAY
+225: 					cs.setString(30, V_ORIGIN);//V_ORIGIN
+226: 					cs.setString(31, V_SEND_MAIL_YN);//V_SEND_MAIL_YN
+227: 					cs.executeQuery();
+228: 					
+229: 					// ERP 입력
+
+
+An error occurred at line: 276 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+273: 				V_ITEM_CD = jsondata.get("ITEM_CD") == null ? "" : jsondata.get("ITEM_CD").toString().toUpperCase();
+274: 				V_ITEM_NM = jsondata.get("ITEM_NM") == null ? "" : jsondata.get("ITEM_NM").toString().toUpperCase();
+275: 				V_ITEM_CALC_YN = jsondata.get("ITEM_CALC_YN") == null ? "" : jsondata.get("ITEM_CALC_YN").toString().toUpperCase();
+276: 				V_SEND_MAIL_YN = jsondata.get("SEND_MAIL_YN") == null ? "" : jsondata.get("SEND_MAIL_YN").toString().toUpperCase();
+277: 				V_SPEC = jsondata.get("SPEC") == null ? "" : jsondata.get("SPEC").toString().toUpperCase();
+278: 
+279: 				String V_ITEM_GROUP_CD = jsondata.get("ITEM_GROUP_CD") == null ? "" : jsondata.get("ITEM_GROUP_CD").toString().toUpperCase();
+
+
+An error occurred at line: 362 in the jsp file: /HSPF01/TOT/base/b_item_tot/sql/B_ITEM_TOT.jsp
+V_SEND_MAIL_YN cannot be resolved to a variable
+359: 				cs.setString(28, USE_YN);//V_M_B_RT
+360: 				cs.setString(29, V_SF_DAY);//V_SF_DAY
+361: 				cs.setString(30, V_ORIGIN);//V_ORIGIN
+362: 				cs.setString(31, V_SEND_MAIL_YN);//V_SEND_MAIL_YN
+363: 				cs.executeQuery();
+364: 				
+365: 				// ERP 입력
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+

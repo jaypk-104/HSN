@@ -1,0 +1,22 @@
+diff a/WebContent/HSPF01/HSPF03/smt/st_tr_reg/app/view/MyGrid.js b/WebContent/HSPF01/HSPF03/smt/st_tr_reg/app/view/MyGrid.js	(rejected hunks)
+@@ -173,19 +173,7 @@
+                 xtype: 'textfield',
+                 style: 'text-align:left',
+                 allowBlank: false,
+-                blankText: '필수 입력사항입니다.',
+-                listeners: {
+-                    afterrender: function(c) {
+-                    	c.getEl().on('dblclick', function() {
+-                			var popup = Ext.create("Popup.view.WinItemPop");
+-                			popup.show();
+-                			
+-                			Ext.getCmp('W_TYPE').setValue('ITEM_STEEL');
+-                			var store = Ext.getStore('WinItemPopStore');
+-                			store.removeAll();
+-                        });
+-                    }
+-                }
++                blankText: '필수 입력사항입니다.'
+             },
+             renderer: function(value, meta, record) {
+                 if (record.get('MVMT_NO') == '' || record.get('MVMT_NO') == null || record.get('MVMT_NO') == undefined) {

@@ -1,0 +1,106 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "winaddrow",
+        "designer|userClassName": "WinAddRow",
+        "height": 136,
+        "layout": "center",
+        "modal": true,
+        "title": "",
+        "width": 240
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "layout": "string",
+        "title": "string",
+        "width": "auto",
+        "modal": "boolean"
+    },
+    "name": "MyWindow",
+    "designerId": "7d21fa0d-0cd6-4dd0-b71b-362c4c2e9a67",
+    "viewControllerInstanceId": "b68941dd-9447-4ef7-b358-aa189cf9b4c1",
+    "viewModelInstanceId": "a54c009d-7db2-400b-ada3-bba6085ec6aa",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "layout": "vbox"
+            },
+            "configAlternates": {
+                "container|align": "string",
+                "layout": "string"
+            },
+            "name": "MyContainer2",
+            "designerId": "ced9ad03-bfba-46d2-a196-0f6839827f1e",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "추가할 행 개수",
+                        "id": "rowCount",
+                        "maxWidth": 200,
+                        "minValue": 1,
+                        "minWidth": 200,
+                        "width": 200
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "maxWidth": "number",
+                        "minValue": "number",
+                        "minWidth": "number",
+                        "width": "auto"
+                    },
+                    "name": "MyNumberField1",
+                    "designerId": "4cf2952a-c630-4894-92f5-c2879831ac9f"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 30,
+                        "id": "addRowBtn",
+                        "layout|flex": 1,
+                        "maxHeight": 30,
+                        "minHeight": 30,
+                        "text": "확인",
+                        "width": 100
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "id": "string",
+                        "layout|flex": "number",
+                        "maxHeight": "number",
+                        "minHeight": "number",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyButton4",
+                    "designerId": "8ba692eb-74ad-4cfd-9e0f-77caf35b7ae2"
+                }
+            ]
+        }
+    ]
+}

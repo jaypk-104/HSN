@@ -1,0 +1,288 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyBorder": false,
+        "designer|userAlias": "mygrid2",
+        "designer|userClassName": "MyGrid2",
+        "flex": 1,
+        "header": false,
+        "store": "C01_Grid_Store",
+        "style": "border: 1px solid #659DDC; padding: 5px;",
+        "tbar": [
+            "[",
+            "    {",
+            "        xtype: 'container',",
+            "        flex: 1",
+            "    }, ",
+            "    {",
+            "        xtype: 'button',",
+            "        glyph: 'xf1c3@FontAwesome',",
+            "        id: 'A01_xlsxDown',",
+            "        cfg: {",
+            "        type: 'excel07',",
+            "        ext: 'xlsx'",
+            "        },",
+            "        cls:'execl_btn',",
+            "        iconCls: 'grid-excel-btn',",
+            "",
+            "    }]"
+        ]
+    },
+    "configAlternates": {
+        "tbar": "object",
+        "bodyBorder": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "header": "boolean",
+        "style": "string",
+        "id": "string",
+        "store": "store",
+        "height": "auto",
+        "flex": "number"
+    },
+    "name": "MyGrid2",
+    "designerId": "7c3bf71b-880d-4ca0-98f8-baf341bf0f77",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "tbar",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "fe9db4aa-0be8-49d7-ae6a-10abecf17010",
+    "viewModelInstanceId": "4c6e9ce3-3cf8-474a-be39-5a6763175ec7",
+    "cn": [
+        {
+            "type": "Ext.view.Table",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "enableTextSelection": true
+            },
+            "configAlternates": {
+                "enableTextSelection": "boolean"
+            },
+            "name": "MyTable",
+            "designerId": "1ddda49e-2d9c-468a-a611-62f7966d2d5a",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "format",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.column.RowNumberer",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "width": 40
+            },
+            "configAlternates": {
+                "width": "number"
+            },
+            "name": "MyRowNumberer",
+            "designerId": "22ee48fe-4c8f-45de-bf82-37533918fc78"
+        },
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "hidden": true,
+                "text": "V_TYPE"
+            },
+            "configAlternates": {
+                "hidden": "boolean",
+                "text": "string"
+            },
+            "name": "MyColumn4",
+            "designerId": "8c23296a-74eb-4517-b195-a2b07f78c02f"
+        },
+        {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "PDATE",
+                "enableTextSelection": true,
+                "exportStyle": [
+                    "{",
+                    "    format: 'Short Date'",
+                    "}"
+                ],
+                "format": "Y-m-d",
+                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                "text": "날짜",
+                "width": 100
+            },
+            "configAlternates": {
+                "align": "string",
+                "dataIndex": "datafield",
+                "enableTextSelection": "boolean",
+                "exportStyle": "object",
+                "format": "string",
+                "style": "string",
+                "text": "string",
+                "maxWidth": "number",
+                "minWidth": "number",
+                "width": "auto"
+            },
+            "name": "MyDateColumn",
+            "designerId": "51a9e699-0b2e-484c-8be2-3365ee6ed5f2"
+        },
+        {
+            "type": "Ext.grid.column.Number",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "BRENT",
+                "enableTextSelection": true,
+                "exportStyle": [
+                    "{",
+                    "                        alignment: {",
+                    "                            horizontal: 'Right'",
+                    "                        }",
+                    "                    }"
+                ],
+                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                "text": "Brent(FOB)",
+                "width": 100
+            },
+            "configAlternates": {
+                "align": "string",
+                "dataIndex": "datafield",
+                "enableTextSelection": "boolean",
+                "exportStyle": "object",
+                "format": "string",
+                "id": "string",
+                "style": "string",
+                "text": "string",
+                "maxWidth": "number",
+                "minWidth": "number",
+                "width": "auto"
+            },
+            "name": "MyNumberColumn1",
+            "designerId": "60db096a-5dc9-45bb-bd8c-aeeb002dd032"
+        },
+        {
+            "type": "Ext.grid.column.Number",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "DUBAI",
+                "enableTextSelection": true,
+                "exportStyle": [
+                    "{",
+                    "                        alignment: {",
+                    "                            horizontal: 'Right'",
+                    "                        }",
+                    "                    }"
+                ],
+                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                "text": "Dubai(FOB)",
+                "width": 100
+            },
+            "configAlternates": {
+                "align": "string",
+                "dataIndex": "datafield",
+                "enableTextSelection": "boolean",
+                "exportStyle": "object",
+                "format": "string",
+                "id": "string",
+                "style": "string",
+                "text": "string",
+                "maxWidth": "number",
+                "minWidth": "number",
+                "width": "auto"
+            },
+            "name": "MyNumberColumn2",
+            "designerId": "94d15928-802c-4a3f-8287-3d38bf867213"
+        },
+        {
+            "type": "Ext.grid.column.Number",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "align": "center",
+                "dataIndex": "WTI",
+                "enableTextSelection": true,
+                "exportStyle": [
+                    "{",
+                    "                        alignment: {",
+                    "                            horizontal: 'Right'",
+                    "                        }",
+                    "                    }"
+                ],
+                "style": "font-size: 12px; text-align: center; font-weight: bold;",
+                "text": "WTI(FOB)",
+                "width": 100
+            },
+            "configAlternates": {
+                "align": "string",
+                "dataIndex": "datafield",
+                "enableTextSelection": "boolean",
+                "exportStyle": "object",
+                "format": "string",
+                "id": "string",
+                "style": "string",
+                "text": "string",
+                "maxWidth": "number",
+                "minWidth": "number",
+                "width": "auto"
+            },
+            "name": "MyNumberColumn3",
+            "designerId": "0231ba78-62fd-4244-98a4-49b3d93b6469"
+        },
+        {
+            "type": "Ext.grid.plugin.Exporter",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyGridExporterPlugin",
+            "designerId": "be67a3c0-7390-4f1c-b4f9-e56fe25e7749"
+        },
+        {
+            "type": "Ext.grid.plugin.CellEditing",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyCellEditingPlugin",
+            "designerId": "4e71e55b-d68a-4d9e-ab63-434e0f1be1f5"
+        }
+    ]
+}

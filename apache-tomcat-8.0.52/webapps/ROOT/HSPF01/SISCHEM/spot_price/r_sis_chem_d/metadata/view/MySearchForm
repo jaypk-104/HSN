@@ -1,0 +1,234 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": 10,
+        "designer|userAlias": "mysearchform",
+        "designer|userClassName": "MySearchForm",
+        "header": false,
+        "layout": "auto",
+        "padding": "",
+        "title": "MyForm"
+    },
+    "configAlternates": {
+        "bodyPadding": "auto",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "header": "boolean",
+        "layout": "string",
+        "padding": "auto",
+        "title": "string"
+    },
+    "name": "MyForm",
+    "designerId": "eb059da7-da6c-414c-b459-a4461b4b5d5c",
+    "viewControllerInstanceId": "797a6c2c-1d63-495f-acf8-4fdd5f3c354c",
+    "viewModelInstanceId": "6511e0dd-39a7-49aa-970f-4aeb87e336e2",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "gridfieldset"
+                ],
+                "container|align": "stretch",
+                "container|pack": "center",
+                "container|padding": 10,
+                "designer|uiInterfaceName": "default",
+                "layout": "vbox",
+                "title": "Search terms"
+            },
+            "configAlternates": {
+                "cls": "typedarray",
+                "container|align": "string",
+                "container|pack": "string",
+                "container|padding": "auto",
+                "designer|uiInterfaceName": "string",
+                "height": "auto",
+                "layout": "string",
+                "maxHeight": "number",
+                "minHeight": "number",
+                "title": "string"
+            },
+            "name": "MyFieldSet",
+            "designerId": "0b9a515a-3256-4605-9624-b51e50e9656f",
+            "cn": [
+                {
+                    "type": "Ext.form.FieldContainer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "layout": "hbox"
+                    },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "layout": "string"
+                    },
+                    "name": "MyFieldContainer",
+                    "designerId": "e17e6687-4e99-4275-8c07-d0a317449e6e",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Date",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "날짜",
+                                "format": "Y-m-d",
+                                "id": "V_FROM_DT",
+                                "labelStyle": "font-size: 12px",
+                                "labelWidth": 80,
+                                "maxWidth": 250,
+                                "minWidth": 250,
+                                "name": "search_field",
+                                "style": "",
+                                "width": 250
+                            },
+                            "configAlternates": {
+                                "endDatefield": "binding",
+                                "endDateField": "string",
+                                "fieldLabel": "string",
+                                "format": "string",
+                                "id": "string",
+                                "itemId": "string",
+                                "labelStyle": "string",
+                                "labelWidth": "number",
+                                "margin": "auto",
+                                "maxWidth": "number",
+                                "minWidth": "number",
+                                "name": "string",
+                                "style": "string",
+                                "vtype": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyDateField1",
+                            "designerId": "362261ab-bf7d-4a06-b889-dda5ddb97af6",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "endDateField",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onV_FROM_DTRender",
+                                        "implHandler": [
+                                            "var nows = new Date();",
+                                            "nows.setMonth(nows.getMonth()-3);",
+                                            "component.setValue(nows);"
+                                        ],
+                                        "name": "render",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onV_FROM_DTRender",
+                                    "designerId": "9ebed8c8-f655-4659-bac2-5ab7e92dae7f"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Date",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "~",
+                                "format": "Y-m-d",
+                                "id": "V_TO_DT",
+                                "labelStyle": "font-size: 12px",
+                                "labelWidth": 10,
+                                "margin": "0 0 0 3",
+                                "maxWidth": 170,
+                                "minWidth": 170,
+                                "name": "search_field",
+                                "style": "",
+                                "width": 170
+                            },
+                            "configAlternates": {
+                                "fieldLabel": "string",
+                                "format": "string",
+                                "id": "string",
+                                "itemId": "string",
+                                "labelStyle": "string",
+                                "labelWidth": "number",
+                                "margin": "auto",
+                                "maxWidth": "number",
+                                "minWidth": "number",
+                                "name": "string",
+                                "style": "string",
+                                "vtype": "string",
+                                "width": "auto",
+                                "startDateField": "string"
+                            },
+                            "name": "MyDateField3",
+                            "designerId": "06b4745e-fb59-4ac8-b5a9-292f63324205",
+                            "customConfigs": [
+                                {
+                                    "group": "(Custom Properties)",
+                                    "name": "startDateField",
+                                    "type": "string"
+                                }
+                            ],
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onV_TO_DTRender",
+                                        "implHandler": [
+                                            "var nows = new Date();",
+                                            "component.setValue(nows);"
+                                        ],
+                                        "name": "render",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onV_TO_DTRender",
+                                    "designerId": "fa267437-5349-41b4-827f-f8762247989f"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

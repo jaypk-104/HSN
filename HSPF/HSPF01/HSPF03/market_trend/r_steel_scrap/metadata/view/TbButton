@@ -1,0 +1,169 @@
+{
+    "type": "Ext.toolbar.Toolbar",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "toolbarBtn",
+        "designer|userClassName": "TbButton",
+        "dock": null
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "designer|initialView": "boolean",
+        "dock": "string"
+    },
+    "name": "MyToolbar1",
+    "designerId": "e7f33d9a-f118-4ba7-a742-6a3e72294cc0",
+    "viewControllerInstanceId": "f91e5a8e-3e5c-4c76-8c86-4fdfa23bf876",
+    "viewModelInstanceId": "f86ed0f4-f560-4127-95f5-d9ccbe196204",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null
+            },
+            "configAlternates": {
+                "layout|flex": "number"
+            },
+            "name": "MyContainer",
+            "designerId": "cc4189a6-ca54-4f8d-b2ee-69da88921201",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "glyph": "xf002@FontAwesome",
+                        "id": "selBtn",
+                        "margin": "0 3 0 0",
+                        "maxWidth": 80,
+                        "minWidth": 80,
+                        "text": "조회",
+                        "width": 80
+                    },
+                    "configAlternates": {
+                        "iconCls": "string",
+                        "layout|flex": "number",
+                        "margin": "auto",
+                        "maxWidth": "number",
+                        "minWidth": "number",
+                        "style": "string",
+                        "text": "string",
+                        "width": "auto",
+                        "id": "string",
+                        "glyph": "auto"
+                    },
+                    "name": "MyButton",
+                    "designerId": "a1f8a67c-3231-4bea-804f-928089a51b81"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "glyph": "xf0c7@FontAwesome",
+                        "id": "saveBtn",
+                        "margin": "0 3 0 0",
+                        "maxWidth": 80,
+                        "minWidth": 80,
+                        "text": "저장",
+                        "width": 80
+                    },
+                    "configAlternates": {
+                        "iconCls": "string",
+                        "layout|flex": "number",
+                        "maxWidth": "number",
+                        "minWidth": "number",
+                        "text": "string",
+                        "width": "auto",
+                        "margin": "auto",
+                        "id": "string",
+                        "glyph": "auto",
+                        "disabled": "boolean"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "be629aa2-d0a3-47e3-b5bf-f21d11be3c11"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "disabled": true,
+                        "glyph": "xf014@FontAwesome",
+                        "id": "delBtn",
+                        "margin": "0 3 0 0 ",
+                        "maxWidth": 80,
+                        "minWidth": 80,
+                        "text": "삭제",
+                        "width": 80
+                    },
+                    "configAlternates": {
+                        "iconCls": "string",
+                        "layout|flex": "number",
+                        "maxWidth": "number",
+                        "minWidth": "number",
+                        "text": "string",
+                        "width": "auto",
+                        "margin": "auto",
+                        "id": "string",
+                        "glyph": "auto",
+                        "disabled": "boolean"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "47e3c106-56d7-44d0-8ef1-3d54133ad152"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "glyph": "xf00d@FontAwesome",
+                        "id": "clsBtn",
+                        "margin": "0 3 0 0",
+                        "maxWidth": 80,
+                        "minWidth": 80,
+                        "text": "닫기",
+                        "width": 80
+                    },
+                    "configAlternates": {
+                        "iconCls": "string",
+                        "layout|flex": "number",
+                        "maxWidth": "number",
+                        "minWidth": "number",
+                        "text": "string",
+                        "width": "auto",
+                        "margin": "auto",
+                        "id": "string",
+                        "glyph": "auto"
+                    },
+                    "name": "MyButton3",
+                    "designerId": "3616efee-648a-410f-943e-5b043f98850c"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "name": "R_STEEL_SCRAP",
+    "settings": {
+        "cmd": {
+            "license": "",
+            "cmdVersion": "",
+            "frameworkVersion": ""
+        },
+        "urlPrefixTemplate": "http://localhost:8085",
+        "urlPrefix": "http://localhost:8085",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Large",
+                "builtIn": true,
+                "height": 1024,
+                "width": 1280
+            }
+        },
+        "exportPath": "C:/inetpub/senchaTest",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "installStatus": "Not Installed"
+    },
+    "xdsVersion": "4.2.3",
+    "xdsBuild": 371,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext65",
+    "viewOrderMap": {
+        "view": [
+            "89189520-9856-4451-a0a6-c14a770eb6de",
+            "f9364cbf-2ee7-4830-a78e-9a8fac7525de",
+            "f60925e2-1c7d-4829-b245-a37021881ea2",
+            "f86ed0f4-f560-4127-95f5-d9ccbe196204",
+            "f91e5a8e-3e5c-4c76-8c86-4fdfa23bf876",
+            "e7f33d9a-f118-4ba7-a742-6a3e72294cc0",
+            "9d63e3d5-fca0-43f3-9444-20a52a873afb",
+            "0bb1cdb7-e058-40bd-987e-722d28c28487",
+            "243a77bb-2b1a-4889-b3f4-d9053f2af395",
+            "eb059da7-da6c-414c-b459-a4461b4b5d5c",
+            "6511e0dd-39a7-49aa-970f-4aeb87e336e2",
+            "797a6c2c-1d63-495f-acf8-4fdd5f3c354c",
+            "a5e26885-bf86-42e9-a1ce-a7d977938536",
+            "5fc99582-326f-4903-9004-182f1fabf1a6",
+            "6d65f6bc-3392-4b48-9e9b-7c11bfd9f8c1",
+            "7c3bf71b-880d-4ca0-98f8-baf341bf0f77",
+            "4c6e9ce3-3cf8-474a-be39-5a6763175ec7",
+            "fe9db4aa-0be8-49d7-ae6a-10abecf17010",
+            "96896388-5cec-4b1b-b0e9-b17808a97d09",
+            "964dfecf-f62c-485d-8c3c-5e51b7efd585",
+            "b2b21527-1fc8-4b12-ac1d-a8093a115dd3",
+            "9dc3a1bc-2fd7-4254-9d4d-e17756974656",
+            "8719b755-6fdd-462b-9135-2cc926bf434f",
+            "5af691aa-58a3-44fd-96a6-78000b9e696b"
+        ],
+        "store": [
+            "5f6cb901-c6e1-44fa-879c-e951b80cce61",
+            "2a49ba98-f661-4f8b-9a44-56a65a9f947d",
+            "e1d65ab1-73de-46f6-9d64-137141d587c9",
+            "e368ee92-a101-4198-bd48-3471ca8d2350",
+            "be1a39ea-9217-4e2f-a2d0-1b96219a1f07",
+            "f78aa1df-e211-4d32-9b35-71a5cbd8a312",
+            "5bb1cc9c-4ef6-416e-ace5-1c7d0c31227a",
+            "ddf3d8be-5713-41c9-85d7-4ea9e3d417c7",
+            "068cc7e0-babc-4b4e-821a-d5f4fd4175f7",
+            "a259d7f4-a29a-4937-a012-f261dafb8079",
+            "1072bbef-e0a5-4930-a513-da8a18bf60e3",
+            "e68e1f56-533a-4695-ae00-49593a28c9a1",
+            "6c932d55-e3f6-41e2-b860-d45229c2f63a",
+            "ad29e381-7758-4142-a165-f9a7064cb1e2",
+            "71113eb6-101b-42cb-8e7f-0583e749f719",
+            "240c7429-87ed-4687-af7b-334b40438a1b",
+            "c2a0042d-1672-418b-aedb-bec8c8430872",
+            "239c0e0b-c9bd-474e-9eb4-22a465e86b6c",
+            "0203e0c4-dffe-4d00-b5e3-7371be0b4fc1"
+        ],
+        "controller": [
+            "601d2cc5-6027-4092-9e74-d7ea8ef994a8",
+            "4db8f12d-0785-492f-9a8d-458daae53eab",
+            "38e98c5a-e6d3-42c2-90d6-00f1ef8548bf"
+        ],
+        "model": [
+            "0f9007df-bfc5-42db-a0af-797e5501ebeb"
+        ],
+        "resource": [
+            "858c6b36-dc01-48ee-b6fa-5120dcc8151d",
+            "87b12ea1-6551-48c0-965a-89ac86295cea",
+            "1d26af71-9add-4109-b41d-28c0c706b3c2"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

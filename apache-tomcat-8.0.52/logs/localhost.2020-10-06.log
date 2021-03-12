@@ -1,0 +1,148 @@
+06-Oct-2020 06:19:21.216 심각 [http-nio-80-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [javax.servlet.ServletException: java.security.InvalidKeyException: No installed provider supports this key: (null)] with root cause
+ java.security.InvalidKeyException: No installed provider supports this key: (null)
+	at javax.crypto.Cipher.chooseProvider(Cipher.java:893)
+	at javax.crypto.Cipher.init(Cipher.java:1249)
+	at javax.crypto.Cipher.init(Cipher.java:1186)
+	at org.apache.jsp.HSPF01.common.login.sql.loginproc_jsp.decryptRsa(loginproc_jsp.java:46)
+	at org.apache.jsp.HSPF01.common.login.sql.loginproc_jsp._jspService(loginproc_jsp.java:245)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+06-Oct-2020 13:43:48.859 심각 [http-nio-80-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 32 in the jsp file: /HSPF01/bill/container_tracking_select/sql/klnetLoad.jsp
+V_CONTAINER_NO cannot be resolved to a variable
+29: 		
+30: 		e_cs = e_conn.prepareCall("{call USP_CONTAINER_TRACKING_SELECT(?,?,?,?)}");
+31: 		e_cs.setString(1, V_TYPE); //
+32: 		e_cs.setString(2, V_CONTAINER_NO); //
+33: 		e_cs.setString(3, V_BL_DOC_NO); //
+34: 		e_cs.setString(4, V_M_BP_NM); //
+35: 		
+
+
+An error occurred at line: 33 in the jsp file: /HSPF01/bill/container_tracking_select/sql/klnetLoad.jsp
+V_BL_DOC_NO cannot be resolved to a variable
+30: 		e_cs = e_conn.prepareCall("{call USP_CONTAINER_TRACKING_SELECT(?,?,?,?)}");
+31: 		e_cs.setString(1, V_TYPE); //
+32: 		e_cs.setString(2, V_CONTAINER_NO); //
+33: 		e_cs.setString(3, V_BL_DOC_NO); //
+34: 		e_cs.setString(4, V_M_BP_NM); //
+35: 		
+36: 		rs = e_cs.executeQuery();
+
+
+An error occurred at line: 34 in the jsp file: /HSPF01/bill/container_tracking_select/sql/klnetLoad.jsp
+V_M_BP_NM cannot be resolved to a variable
+31: 		e_cs.setString(1, V_TYPE); //
+32: 		e_cs.setString(2, V_CONTAINER_NO); //
+33: 		e_cs.setString(3, V_BL_DOC_NO); //
+34: 		e_cs.setString(4, V_M_BP_NM); //
+35: 		
+36: 		rs = e_cs.executeQuery();
+37: 		/*
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 32 in the jsp file: /HSPF01/bill/container_tracking_select/sql/klnetLoad.jsp
+V_CONTAINER_NO cannot be resolved to a variable
+29: 		
+30: 		e_cs = e_conn.prepareCall("{call USP_CONTAINER_TRACKING_SELECT(?,?,?,?)}");
+31: 		e_cs.setString(1, V_TYPE); //
+32: 		e_cs.setString(2, V_CONTAINER_NO); //
+33: 		e_cs.setString(3, V_BL_DOC_NO); //
+34: 		e_cs.setString(4, V_M_BP_NM); //
+35: 		
+
+
+An error occurred at line: 33 in the jsp file: /HSPF01/bill/container_tracking_select/sql/klnetLoad.jsp
+V_BL_DOC_NO cannot be resolved to a variable
+30: 		e_cs = e_conn.prepareCall("{call USP_CONTAINER_TRACKING_SELECT(?,?,?,?)}");
+31: 		e_cs.setString(1, V_TYPE); //
+32: 		e_cs.setString(2, V_CONTAINER_NO); //
+33: 		e_cs.setString(3, V_BL_DOC_NO); //
+34: 		e_cs.setString(4, V_M_BP_NM); //
+35: 		
+36: 		rs = e_cs.executeQuery();
+
+
+An error occurred at line: 34 in the jsp file: /HSPF01/bill/container_tracking_select/sql/klnetLoad.jsp
+V_M_BP_NM cannot be resolved to a variable
+31: 		e_cs.setString(1, V_TYPE); //
+32: 		e_cs.setString(2, V_CONTAINER_NO); //
+33: 		e_cs.setString(3, V_BL_DOC_NO); //
+34: 		e_cs.setString(4, V_M_BP_NM); //
+35: 		
+36: 		rs = e_cs.executeQuery();
+37: 		/*
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:495)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:458)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1156)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
